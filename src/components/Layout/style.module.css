@@ -1,0 +1,17 @@
+.backgroundImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-image: url("src/assets/forest-simon-1k3g_rALKRc-unsplash (1).jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* min-width: 100dvw; */
+}

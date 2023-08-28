@@ -1,0 +1,26 @@
+.container {
+  position: sticky;
+  top: 0;
+  border-bottom: 3px solid white;
+  border-radius: 0 0 8px 8px;
+  z-index: 1;
+  width: 55%;
+  /* min-width: calc(fit-content + 3em); */
+  /* backdrop-filter: blur(20px); */
+}
+.innerContainer {
+  backdrop-filter: blur(2px);
+  display: flex;
+  gap: min(3em, 8vmin);
+  /* justify-content: space-between; */
+  padding: 1em 1em;
+  margin: 0 auto;
+  min-height: 100%;
+  width: fit-content;
+  text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 95dvw;
+  }
+}
