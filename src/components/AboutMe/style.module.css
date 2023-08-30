@@ -1,11 +1,12 @@
 .container {
   margin: 0 auto;
   padding: 3em;
-  margin-top: 6rem;
+  margin-top: 10rem;
   width: 70%;
   /* border: 2px solid white; */
   backdrop-filter: blur(15px);
   border-radius: 12px;
+  animation: fadeIn 3s ease-in-out;
 }
 .container > div:first-child {
   border: 2px solid white;
@@ -19,10 +20,6 @@
 .container p {
   margin-top: 1em;
   font-size: 1.15em;
-  /* width: 55%; */
-}
-.facts {
-  width: 40%;
 }
 
 .container p {
@@ -37,7 +34,6 @@
   white-space: nowrap;
   animation: typing 3s steps(40, end) forwards,
     blink-caret 0.5s step-end alternate;
-  /* opacity: 0; */
   width: 0;
   line-height: 1.5;
 }
@@ -53,5 +49,113 @@
   100% {
     width: 100%;
     opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
+
+.facts {
+  animation: moveRight 15s linear infinite;
+  overflow: hidden;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.facts li {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* animation: animate2 15s linear infinite; */
+  animation: moveRight 15s linear infinite;
+
+  width: fit-content;
+  padding: 0.5em;
+  opacity: 0;
+}
+
+.facts li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.facts li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.facts li:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.facts li:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.facts li:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.facts li:nth-child(6) {
+  animation-delay: 5s;
+}
+.facts li:nth-child(7) {
+  animation-delay: 6s;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .container {
+    width: 80%;
+  }
+  /*.container > div:first-child {
+    width: 100%;
+  }
+  .facts {
+    background-color: aqua;
+    align-items: center;
+  } */
+}
+@media screen and (max-width: 1210px) {
+  .container {
+    width: 90vw;
+    align-items: center;
+    padding: 0.5em;
+    gap: 0.5em;
+  }
+  .container > div:first-child,
+  .facts {
+    width: 100%;
+  }
+  .facts {
+    gap: 0.5em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container span:first-child {
+    display: none;
   }
 }

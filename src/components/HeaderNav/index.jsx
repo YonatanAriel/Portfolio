@@ -3,16 +3,20 @@ import HeaderLink from "../HeaderLink";
 
 function HeaderNav() {
   const linksData = [
-    { text: "About" },
-    { text: "Projects" },
-    { text: "Skills" },
+    { text: "About", destiny: "about me" },
+    { text: "Projects", destiny: "projects" },
+    { text: "Skills", destiny: "skills" },
   ];
   return (
     <>
       <div className={styles.container}>
         <div className={styles.innerContainer}>
           {linksData.map((link) => (
-            <HeaderLink key={link.text} text={link.text} />
+            <HeaderLink
+              key={link.text}
+              destiny={link.destiny}
+              text={link.text}
+            />
           ))}
         </div>
       </div>
