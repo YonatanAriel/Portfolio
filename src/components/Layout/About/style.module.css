@@ -14,9 +14,7 @@
 
 .textContainer {
   display: flex;
-  /* max-width: 50%; */
   flex-direction: column;
-  /* gap: -600px; */
 }
 .textContainer > div {
   align-items: flex-end;
@@ -63,6 +61,62 @@
 .welcome.hidden div {
   opacity: 0;
 }
+.textContainer > div {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+.textContainer span + span {
+  margin-left: 0.35em;
+}
+.textContainer span,
+h1,
+p {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.textContainer > div:first-child p {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.textContainer > div:first-child span:first-child {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.textContainer > div:first-child span:last-child {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.textContainer > div h1 {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.textContainer > div:last-child h2 span:first-child {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.textContainer > div:last-child h2 span:nth-child(2) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.textContainer > div:last-child h2 span:last-child {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
 @keyframes reveal {
   80% {
@@ -85,13 +139,21 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .textContainer {
-    text-align: center;
+  .detailsContainer {
+    gap: 1.5rem;
   }
   .textContainer > div {
     align-items: flex-start;
+    text-align: center;
   }
-  .textContainer > div:last-child h1 {
+  .textContainer {
+    align-items: center;
+  }
+  .textContainer > div:last-child {
+    text-align: center;
+  }
+  .textContainer > div:last-child h1,
+  .textContainer > div:first-child span:last-child {
     display: none;
   }
 }

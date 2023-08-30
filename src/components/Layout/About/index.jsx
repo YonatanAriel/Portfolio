@@ -38,11 +38,19 @@ function About() {
             <div className={`${styles.detailsContainer} d-flex  `}>
               <div className={styles.textContainer}>
                 <div className="d-flex">
-                  <p>Hey, i'm</p> <h1>Yonatan Ariel</h1>
+                  <p>Hey, i'm</p>
+                  <h1>
+                    <span>Yonatan </span>
+                    <span>Ariel</span>
+                  </h1>
                 </div>
                 <div>
                   <h1>A</h1>
-                  <h2>Full Stack Developer</h2>
+                  <h2>
+                    <span> Full</span>
+                    <span> Stack</span>
+                    <span> Developer</span>
+                  </h2>
                 </div>
                 {/* <p>
                 Coding is my true love. Driven by this passion, I'm highly
@@ -52,6 +60,7 @@ function About() {
                 necessary.
               </p>*/}
               </div>
+
               <ProfilePhoto />
             </div>
           </>

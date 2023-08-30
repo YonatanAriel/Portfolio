@@ -3,9 +3,9 @@ import HeaderLink from "../HeaderLink";
 
 function HeaderNav() {
   const linksData = [
-    { text: "about me" },
-    { text: "projects" },
-    { text: "skills" },
+    { text: "About" },
+    { text: "Projects" },
+    { text: "Skills" },
   ];
   return (
     <>
