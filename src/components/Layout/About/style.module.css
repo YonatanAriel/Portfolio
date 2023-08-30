@@ -105,6 +105,22 @@ p {
 .textContainer > div:last-child h2 span:last-child {
   animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
+.topSkills {
+  padding: 0.6em;
+  margin-top: 1rem;
+  backdrop-filter: blur(80px);
+  display: flex;
+  border-radius: 12px;
+  flex-wrap: wrap;
+  max-width: 97dvw;
+  justify-content: space-evenly;
+  border: 2px solid white;
+  animation: fadeInUp 2.3s linear;
+}
+.topSkills div {
+  border: 2px solid white;
+}
 @keyframes scale {
   100% {
     transform: scale(1);
@@ -135,6 +151,12 @@ p {
 @keyframes dimension {
   0% {
     transform: rotateX(-90deg);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
   }
 }
 

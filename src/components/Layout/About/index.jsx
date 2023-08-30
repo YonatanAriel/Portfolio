@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 import ProfilePhoto from "../../ProfilePhoto";
 import { useState, useEffect } from "react";
+import TopSkills from "../../TopSkills";
 
 function About() {
   const [visibility, setVisibility] = useState({
@@ -62,6 +63,9 @@ function About() {
               </div>
 
               <ProfilePhoto />
+            </div>
+            <div className={styles.topSkills}>
+              <TopSkills />
             </div>
           </>
         )}
