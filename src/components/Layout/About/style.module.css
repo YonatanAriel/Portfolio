@@ -72,8 +72,8 @@
   margin-left: 0.35em;
 }
 .textContainer span,
-h1,
-p {
+.textContainer h1,
+.textContainer p {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);

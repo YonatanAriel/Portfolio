@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 import ProfilePhoto from "../../ProfilePhoto";
 import { useState, useEffect } from "react";
 import TopSkills from "../../TopSkills";
+import AboutMe from "../../AboutMe";
 
 function About() {
   const [visibility, setVisibility] = useState({
@@ -53,23 +54,17 @@ function About() {
                     <span> Developer</span>
                   </h2>
                 </div>
-                {/* <p>
-                Coding is my true love. Driven by this passion, I'm highly
-                motivated to continuously expand my knowledge, enabling me to
-                adapt quickly to new challenges and technologies. I genuinely
-                enjoy working with people and possess the ability to ad when
-                necessary.
-              </p>*/}
               </div>
 
               <ProfilePhoto />
             </div>
-            <div className={styles.topSkills}>
+            <div className={`${styles.topSkills} `}>
               <TopSkills />
             </div>
           </>
         )}
       </div>
+      <AboutMe />
     </>
   );
 }
