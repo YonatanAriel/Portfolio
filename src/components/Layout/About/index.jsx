@@ -3,33 +3,60 @@ import ProfilePhoto from "../../ProfilePhoto";
 import { useState, useEffect } from "react";
 
 function About() {
-  const [hideWelcome, setHideWelcome] = useState(false);
+  const [visibility, setVisibility] = useState({
+    welcome: true,
+    detailsDiv: false,
+  });
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setHideWelcome(true);
+    const welcomeTimer = setTimeout(() => {
+      setVisibility((prev) => ({ ...prev, welcome: false }));
     }, 1000);
-    return () => clearTimeout(timer);
+
+    const detailsTimer = setTimeout(() => {
+      setVisibility((prev) => ({ ...prev, detailsDiv: true }));
+    }, 3200);
+
+    return () => {
+      clearTimeout(welcomeTimer);
+      clearTimeout(detailsTimer);
+    };
   }, []);
   return (
     <>
-      {/* <div className={styles.container}> */}
-      <div className={`${styles.welcome} ${hideWelcome ? styles.hidden : ""}`}>
-        <div>WELCOME!</div>
-      </div>
-      {hideWelcome && (
-        <div className={`${styles.detailsContainer} d-flex container`}>
-          <ProfilePhoto />
-          <div className={styles.textContainer}>
-            <h1>Yonatan Ariel</h1>
-            <h3>Full Stack Developer</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus porro commodi rem explicabo velit provident.
-            </p>
-          </div>
+      <div className={styles.container}>
+        <div
+          style={{ display: visibility.detailsDiv && "none" }}
+          className={`${styles.welcome} ${
+            visibility.welcome ? "" : styles.hidden
+          }`}
+        >
+          <div>WELCOME!</div>
         </div>
-      )}
-      {/* </div> */}
+
+        {visibility.detailsDiv && (
+          <>
+            <div className={`${styles.detailsContainer} d-flex  `}>
+              <div className={styles.textContainer}>
+                <div className="d-flex">
+                  <p>Hey, i'm</p> <h1>Yonatan Ariel</h1>
+                </div>
+                <div>
+                  <h1>A</h1>
+                  <h2>Full Stack Developer</h2>
+                </div>
+                {/* <p>
+                Coding is my true love. Driven by this passion, I'm highly
+                motivated to continuously expand my knowledge, enabling me to
+                adapt quickly to new challenges and technologies. I genuinely
+                enjoy working with people and possess the ability to ad when
+                necessary.
+              </p>*/}
+              </div>
+              <ProfilePhoto />
+            </div>
+          </>
+        )}
+      </div>
     </>
   );
 }

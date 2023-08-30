@@ -1,18 +1,38 @@
 .detailsContainer {
   margin: 20px auto 0 auto;
   backdrop-filter: blur(10px);
-  border-top: 2px solid white;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  border-left: 2px solid white;
+  border: 2px solid white;
   border-radius: 11px;
   color: white;
-  padding: 40px;
-  width: fit-content;
+  animation: dimension 1s ease-in-out alternate;
+  padding-top: 7rem;
+  gap: 3rem;
+  padding: 3em;
+  text-align: left;
+  max-width: 97vw;
 }
 
 .textContainer {
-  max-width: 50%;
+  display: flex;
+  /* max-width: 50%; */
+  flex-direction: column;
+  /* gap: -600px; */
+}
+.textContainer > div {
+  align-items: flex-end;
+  gap: 0.3em;
+  font-size: 2rem;
+}
+.textContainer p {
+  padding-bottom: 0.2em;
+}
+.textContainer > div:last-child {
+  display: flex;
+  gap: 0.5em;
+}
+.textContainer h2 {
+  font-size: 2.3rem;
+  padding-bottom: 0.28em;
 }
 
 .welcome {
@@ -40,6 +60,9 @@
 
   transition: opacity 1s ease-out 2s;
 }
+.welcome.hidden div {
+  opacity: 0;
+}
 
 @keyframes reveal {
   80% {
@@ -54,6 +77,21 @@
     text-shadow: 0 0 8px #fff;
   }
 }
-.welcome.hidden div {
-  opacity: 0;
+
+@keyframes dimension {
+  0% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .textContainer {
+    text-align: center;
+  }
+  .textContainer > div {
+    align-items: flex-start;
+  }
+  .textContainer > div:last-child h1 {
+    display: none;
+  }
 }

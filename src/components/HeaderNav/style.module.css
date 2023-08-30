@@ -5,15 +5,12 @@
   border-radius: 0 0 8px 8px;
   z-index: 1;
   width: 55%;
-  /* min-width: calc(fit-content + 3em); */
-  /* backdrop-filter: blur(20px); */
 }
 .innerContainer {
   backdrop-filter: blur(2px);
   display: flex;
   gap: min(3em, 8vmin);
-  /* justify-content: space-between; */
-  padding: 1em 1em;
+  padding: 16px;
   margin: 0 auto;
   min-height: 100%;
   width: fit-content;

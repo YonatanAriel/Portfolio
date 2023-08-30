@@ -5,7 +5,7 @@ font-family: 'Quattrocento', serif;*/
 :root {
   line-height: 1.5;
   font-weight: 400;
-
+  font-size: 16px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -52,7 +52,7 @@ li {
 }
 .container {
   width: 80%;
-  max-width: 1100px;
+  max-width: min(1100px, 97vw);
   margin: 0 auto;
 }
 .column {
@@ -60,12 +60,15 @@ li {
   /* max-width: 50%;
   padding: 1.5rem; */
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1024px) {
   .d-flex {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 500px) {
+  :root {
+    font-size: 85%;
+  }
   .container {
     width: 95%;
   }
