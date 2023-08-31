@@ -27,6 +27,13 @@
   flex-direction: column;
   font-weight: 700;
   align-items: center;
+  transition: all 0.8s ease;
+}
+.triangle:hover a {
+  transform: scale(0.95) translateX(-4px);
+  opacity: 0.9;
+  margin-right: 0.3rem;
+  color: black;
 }
 .triangle a:first-child {
   margin-right: 2rem;

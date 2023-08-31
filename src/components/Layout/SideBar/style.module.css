@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 70vh;
   background-color: white;
   width: 4px;
   z-index: 1;
@@ -13,7 +13,7 @@
 
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
+  padding: 1rem 0 3rem 0;
   justify-content: space-between;
 }
 .barContainer a {
@@ -31,7 +31,38 @@
   text-decoration: none;
   transition: transform 0.3s ease-out;
 }
-.barContainer a:hover,
-:focus {
-  transform: scale(1.03);
+.barContainer a:hover {
+  transform: scale(1.1);
+}
+.contactMe {
+  transform: translateX(-13px) rotate(270deg);
+  font-weight: 900;
+  font-family: "Quattrocento", serif;
+  font-size: 1.2rem;
+  backdrop-filter: blur(1px);
+  width: 120px;
+  margin-top: 2.5rem;
+  text-shadow: 1px 1px 2px #474747;
+}
+.copied {
+  font-weight: 900;
+  font-size: 1rem;
+  color: black;
+  animation: fadeInOut 1.5s ease-in-out;
+  position: absolute;
+  left: 0.7rem;
+  top: 9vh;
+  padding: 0.2rem 0.4rem;
+  border-radius: 100px;
+  color: white;
+  backdrop-filter: blur(2px);
+}
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }

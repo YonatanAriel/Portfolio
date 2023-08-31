@@ -18,9 +18,7 @@
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  /* animation: animate 25s linear infinite; */
   animation: animate 35s linear infinite;
-
   bottom: -150px;
 }
 
