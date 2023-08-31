@@ -2,13 +2,12 @@ import styles from "./style.module.css";
 
 function TopSkills() {
   const skillsLogos = [
-    "src/assets/react-logo-1.png",
-    "src/assets/nodejs.png",
-    "src/assets/MongoDBSquareLogo.png",
-
-    "src/assets/sql-database-icon-logo-design-ui-ux-app-gold-inscription-dark-black-background-96842123.webp",
-    "src/assets/images.png",
-    "src/assets/download (1).jpeg",
+    "src/assets/icons8-react-native-500.png",
+    "src/assets/icons8-javascript-500.png",
+    "src/assets/icons8-node-js-512.png",
+    "src/assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png",
+    "src/assets/icons8-sql-100.png",
+    "src/assets/icons8-redux-500.png",
   ];
   return (
     <>
