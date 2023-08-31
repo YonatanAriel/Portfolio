@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import styles from "./style.module.css";
+import { ScreenWidthContext } from "../Layout/index";
 
 function AboutMe() {
   const [animationIndex, setAnimationIndex] = useState(0);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const { screenWidth } = useContext(ScreenWidthContext);
 
   const textLines =
     screenWidth > 600
@@ -30,28 +31,44 @@ function AboutMe() {
           "when necessary.",
         ];
   const facts = [
-    "Single 🦄",
-    "❤️ Frontend",
-    "Code 24/7 🤩",
-    "😎 22 Years Old",
-    "Lives In Israel ✡️",
-    "🏋️‍♀️ Workout & Football",
-    "Speaks English & Hebrew 🤓",
+    {
+      text: "Single",
+      img: "src/assets/icons8-heart-96.png",
+    },
+    // {
+    //     text: "Frontend",
+    //     img: "src/assets/icons8-website-96.png",
+    //   },
+    //   {
+    //     text: "Code 24/7 🤩",
+    //     img: "src/assets/icons8-code-96.png",
+    //   },
+    //   {
+    //     text: "😎 22 Years Old",
+    //     img: "src/assets/icons8-birthday-96.png",
+    //   },
+    //   {
+    //     text: "Lives In Israel ✡️",
+    //     img: "src/assets/icons8-israel-96.png",
+    //   },
+    //   {
+    //     text: "🏋️‍♀️ Workout & Football",
+    //     img: "src/assets/icons8-dumbbell-96.png",
+    //   },
+    //   {
+    //     text: "Speaks English & Hebrew 🤓",
+    //     img: "src/assets/icons8-language-96.png",
+    //   },
+    // ];
+
+    // "Single 🦄",
+    // " Frontend",
+    // "Code 24/7 🤩",
+    // "😎 22 Years Old",
+    // "Lives In Israel ✡️",
+    // "🏋️‍♀️ Workout & Football",
+    // "Speaks English & Hebrew 🤓",
   ];
-
-  useEffect(() => {
-    const updateScreenWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", updateScreenWidth);
-
-    updateScreenWidth();
-
-    return () => {
-      window.removeEventListener("resize", updateScreenWidth);
-    };
-  }, []);
 
   useEffect(() => {
     if (animationIndex < textLines.length) {
@@ -79,8 +96,12 @@ function AboutMe() {
         </p>
       </div>
       <ul className={styles.facts}>
-        {facts.map((fact) => (
-          <li key={fact}>{fact}</li>
+        {facts.map((fact, i) => (
+          <li>
+            {i % 2 === 0 && <img src={fact.img} alt="" />}
+            <span key={fact.text}>{fact.text}</span>
+            {!(i % 2 === 0) && <img src={fact.img} alt="" />}
+          </li>
         ))}
       </ul>
     </div>

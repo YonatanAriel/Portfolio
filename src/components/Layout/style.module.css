@@ -21,13 +21,15 @@
   left: 0;
   bottom: 0;
   height: 100vh;
-  width: 100vw;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 0.65%;
+  max-width: 100vw;
 }
 .backgroundImg > .gg > img {
   background-position: center;
   background-size: cover;
-  width: 32.9%;
+  /* flex: 1 1 0; */
+  /* width: 32.9%; */
 }
 .backgroundImg > img {
   /* position: fixed;
