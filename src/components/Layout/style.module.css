@@ -3,14 +3,42 @@
   top: 0;
   right: 0;
   left: 0;
-  background-image: url("src/assets/forest-simon-1k3g_rALKRc-unsplash (1).jpg");
+  /* background-image: url("src/assets/forest-simon-1k3g_rALKRc-unsplash (1).jpg"); */
 
+  background-image: url("");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 400vh;
 
   /* min-width: 100dvw; */
+}
+.backgroundImg > .gg {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+.backgroundImg > .gg > img {
+  background-position: center;
+  background-size: cover;
+  width: 32.9%;
+}
+.backgroundImg > img {
+  /* position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; */
 }
 .backgroundColor {
   width: 100%;

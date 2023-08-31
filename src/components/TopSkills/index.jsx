@@ -5,7 +5,8 @@ function TopSkills() {
     "src/assets/react-logo-1.png",
     "src/assets/nodejs.png",
     "src/assets/MongoDBSquareLogo.png",
-    "src/assets/download.jpeg",
+
+    "src/assets/sql-database-icon-logo-design-ui-ux-app-gold-inscription-dark-black-background-96842123.webp",
     "src/assets/images.png",
     "src/assets/download (1).jpeg",
   ];

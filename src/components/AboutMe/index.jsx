@@ -10,8 +10,8 @@ function AboutMe() {
       ? [
           "Coding is my true love.",
           "Driven by this passion, I'm highly motivated",
-          " to continuously expand my knowledge, enabling ",
-          "me to adapt quickly to new challenges",
+          " to continuously expand my knowledge,",
+          "enabling me to adapt quickly to new challenges",
           " and technologies.",
           "I genuinely enjoy working with people and ",
           "possess the capability to lead when necessary.",
@@ -57,7 +57,7 @@ function AboutMe() {
     if (animationIndex < textLines.length) {
       const timer = setTimeout(() => {
         setAnimationIndex(animationIndex + 1);
-      }, 3000); // Delay each span's animation by 3 seconds
+      }, 3000);
 
       return () => clearTimeout(timer);
     }
