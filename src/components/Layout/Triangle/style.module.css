@@ -1,0 +1,44 @@
+.triangle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  backdrop-filter: blur(15px);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  z-index: 2;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  padding-bottom: 1rem;
+  padding-top: 7px;
+}
+.triangle a {
+  color: white;
+  transform: rotate(51deg);
+  width: 38px;
+  height: 25px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  font-weight: 700;
+  align-items: center;
+}
+.triangle a:first-child {
+  margin-right: 2rem;
+}
+.border {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-left: 2px solid white;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  clip-path: polygon(100% 100%, 0 0, 16% 0);
+}

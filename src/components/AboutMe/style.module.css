@@ -1,13 +1,47 @@
 .container {
   margin: 0 auto;
   padding: 3em;
-  margin-top: 10rem;
+  margin-top: 7rem;
   width: 70%;
-  /* border: 2px solid white; */
   backdrop-filter: blur(15px);
   border-radius: 12px;
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
+.container > div:first-child > h1:first-child {
+  transform: scale(0.94);
+  animation: scale 2.1s forwards 0.8s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container > div:first-child > h1:first-child span {
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.container > div:first-child > h1:first-child span:nth-child(1) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.container > div:first-child > h1:first-child span:nth-child(2) {
+  animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.container > div:first-child > h1:first-child span:nth-child(3) {
+  animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 .container > div:first-child {
   border: 2px solid white;
   width: 60%;
@@ -32,8 +66,7 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(40, end) forwards,
-    blink-caret 0.5s step-end alternate;
+  animation: typing 3s steps(40, end) 1s forwards;
   width: 0;
   line-height: 1.5;
 }
@@ -59,7 +92,6 @@
 }
 
 .facts {
-  /* animation: moveRight 15s linear infinite; */
   overflow: hidden;
   width: 40%;
   height: 100%;
@@ -74,7 +106,6 @@
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  /* animation: animate2 15s linear infinite; */
   animation: moveRight 15s linear infinite;
   width: fit-content;
   padding: 0.3em 0.5em;
@@ -132,13 +163,6 @@
   .container {
     width: 80%;
   }
-  /*.container > div:first-child {
-    width: 100%;
-  }
-  .facts {
-    background-color: aqua;
-    align-items: center;
-  } */
 }
 @media screen and (max-width: 1210px) {
   .container {

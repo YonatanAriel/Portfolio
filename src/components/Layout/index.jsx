@@ -2,6 +2,8 @@ import FlyingSquares from "../FlyingSquares";
 import HeaderNav from "../HeaderNav";
 import Locomotive from "../Locomotive";
 import About from "./About";
+import SideBar from "./SideBar/index";
+import Triangle from "./Triangle";
 import styles from "./style.module.css";
 import { useState, useEffect, createContext } from "react";
 
@@ -49,6 +51,8 @@ function Layout() {
           <ScreenWidthContext.Provider value={{ screenWidth }}>
             <FlyingSquares />
             <HeaderNav />
+            <Triangle />
+            <SideBar />
             <About />
             {/* <button
               style={{

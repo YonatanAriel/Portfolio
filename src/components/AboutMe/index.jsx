@@ -75,7 +75,8 @@ function AboutMe() {
     <div id="about me" className={`${styles.container} d-flex`}>
       <div>
         <h1>
-          <span>A bit </span>about me..
+          <span>A bit</span> <span> about</span>
+          <span> me..</span>
         </h1>
         <p>
           {textLines.slice(0, animationIndex).map((line, index) => (
@@ -88,7 +89,7 @@ function AboutMe() {
       </div>
       <ul className={styles.facts}>
         {facts.map((fact, i) => (
-          <li>
+          <li key={fact.text}>
             {i % 2 === 0 && <img src={fact.img} alt="" />}
             <span key={fact.text}>{fact.text}</span>
             {!(i % 2 === 0) && <img src={fact.img} alt="" />}
