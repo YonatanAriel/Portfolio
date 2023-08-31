@@ -33,41 +33,32 @@ function AboutMe() {
   const facts = [
     {
       text: "Single",
+      img: "src/assets/icons8-account-100.png",
+    },
+    {
+      text: "Frontend",
       img: "src/assets/icons8-heart-96.png",
     },
-    // {
-    //     text: "Frontend",
-    //     img: "src/assets/icons8-website-96.png",
-    //   },
-    //   {
-    //     text: "Code 24/7 🤩",
-    //     img: "src/assets/icons8-code-96.png",
-    //   },
-    //   {
-    //     text: "😎 22 Years Old",
-    //     img: "src/assets/icons8-birthday-96.png",
-    //   },
-    //   {
-    //     text: "Lives In Israel ✡️",
-    //     img: "src/assets/icons8-israel-96.png",
-    //   },
-    //   {
-    //     text: "🏋️‍♀️ Workout & Football",
-    //     img: "src/assets/icons8-dumbbell-96.png",
-    //   },
-    //   {
-    //     text: "Speaks English & Hebrew 🤓",
-    //     img: "src/assets/icons8-language-96.png",
-    //   },
-    // ];
-
-    // "Single 🦄",
-    // " Frontend",
-    // "Code 24/7 🤩",
-    // "😎 22 Years Old",
-    // "Lives In Israel ✡️",
-    // "🏋️‍♀️ Workout & Football",
-    // "Speaks English & Hebrew 🤓",
+    {
+      text: "Code 24/7",
+      img: "src/assets/icons8-last-24-hours-64.png",
+    },
+    {
+      text: "22 Years Old",
+      img: "src/assets/icons8-elderly-person-100.png",
+    },
+    {
+      text: "Lives In Israel",
+      img: "src/assets/icons8-star-of-david-100.png",
+    },
+    {
+      text: "English & Hebrew",
+      img: "src/assets/icons8-translation-96.png",
+    },
+    {
+      text: "Workout & Football",
+      img: "src/assets/icons8-dumbbell-100.png",
+    },
   ];
 
   useEffect(() => {
