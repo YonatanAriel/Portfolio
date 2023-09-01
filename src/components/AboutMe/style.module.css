@@ -51,19 +51,14 @@
 .container h1 {
   font-size: 2.8rem;
 }
-.container p {
-  margin-top: 1em;
-  font-size: 1.15em;
-}
 
-.container p {
+.txtContainer {
   margin-top: 1em;
   font-size: 1.15em;
   white-space: pre-line;
 }
 
-.container p span {
-  display: inline-block;
+.container .txtContainer div {
   overflow: hidden;
   white-space: nowrap;
   animation: typing 3s steps(40, end) 1s forwards;
@@ -184,8 +179,14 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 450px) {
-  .container span:first-child {
+@media screen and (max-width: 600px) and (min-width: 400px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aBit {
     display: none;
   }
 }
