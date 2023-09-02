@@ -9,8 +9,8 @@ function AboutMe() {
 
   const textLines =
     screenWidth > 600
-      ? aboutMeData.bigScreenTxt
-      :aboutMeData.smallScreenTxt
+      ? aboutMeData?.bigScreenTxt
+      :aboutMeData?.smallScreenTxt
 
   useEffect(() => {
     if (animationIndex < textLines.length) {
@@ -36,7 +36,7 @@ function AboutMe() {
         </div>
       </div>
       <ul className={styles.facts}>
-        {aboutMeData.facts.map((fact, i) => (
+        {aboutMeData?.facts.map((fact, i) => (
           <li key={fact.text}>
             {i % 2 === 0 && <img src={fact.img} alt="" />}
             <span key={fact.text}>{fact.text}</span>

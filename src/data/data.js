@@ -34,7 +34,8 @@ export const topSkillsLogos = [
     { txt: " and technologies.", time: 2000 },
     { txt: "I genuinely enjoy working with people and ", time: 2000 },
     { txt: "possess the capability to lead when necessary.", time: 2000 },
-  ],smallScreenTxt:[
+  ],
+  smallScreenTxt:[
     { txt: "Coding is my true love.", time: 2800 },
     { txt: "Driven by this passion,  ", time: 3000 },
     { txt: "I'm highly motivated to", time: 2200 },
@@ -46,7 +47,8 @@ export const topSkillsLogos = [
     { txt: "with people and possess", time: 2200 },
     { txt: "the capability to lead", time: 2200 },
     { txt: "when necessary.", time: 2200 },
-  ]  ,facts:[
+  ]  , 
+  facts:[
     {
       text: "Single",
       img: "src/assets/icons8-account-100.png",

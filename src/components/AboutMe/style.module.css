@@ -6,6 +6,7 @@
   backdrop-filter: blur(15px);
   border-radius: 12px;
   animation: fadeIn 1.5s ease-in-out;
+  max-width: 83dvw;
 }
 .container > div:first-child > h1:first-child {
   transform: scale(0.94);
