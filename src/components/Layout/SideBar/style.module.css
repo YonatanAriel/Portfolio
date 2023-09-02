@@ -82,11 +82,6 @@
     border-radius: 12px 12px 0 0;
     justify-content: space-evenly;
     padding: 0 0 2rem 0;
-    /* backdrop-filter: blur(15px); */
-
-
-
-
   }
   .barContainer a {
     transform: translateY(-5px);
