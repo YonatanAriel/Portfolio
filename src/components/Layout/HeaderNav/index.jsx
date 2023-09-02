@@ -1,17 +1,13 @@
 import styles from "./style.module.css";
-import HeaderLink from "../HeaderLink";
+import HeaderLink from "../../HeaderLink";
+import { headerLinks } from "../../../data/data";
 
 function HeaderNav() {
-  const linksData = [
-    { text: "About", destiny: "about me" },
-    { text: "Projects", destiny: "projects" },
-    { text: "Skills", destiny: "skills" },
-  ];
   return (
     <>
       <div className={styles.container}>
         <div className={styles.innerContainer}>
-          {linksData.map((link) => (
+          {headerLinks.map((link) => (
             <HeaderLink
               key={link.text}
               destiny={link.destiny}

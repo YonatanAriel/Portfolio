@@ -1,5 +1,5 @@
-import FlyingSquares from "../FlyingSquares";
-import HeaderNav from "../HeaderNav";
+import FlyingSquares from "./FlyingSquares/index"
+import HeaderNav from "./HeaderNav";
 import Locomotive from "../Locomotive";
 import About from "./About";
 import SideBar from "./SideBar/index";
