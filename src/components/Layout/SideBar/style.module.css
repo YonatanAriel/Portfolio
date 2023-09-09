@@ -9,7 +9,7 @@
   width: 10px;
   border-right: 4px solid white;
   border-radius: 0 12px 12px 0;
-  z-index: 1;  
+  z-index: 2;
   display: flex;
   flex-direction: column;
   padding: 1.4rem 0 3rem 0;
@@ -69,7 +69,7 @@
     opacity: 1;
   }
 }
-@media screen and  (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .barContainer {
     bottom: 0px;
     top: unset;
@@ -89,6 +89,6 @@
     box-shadow: 1px 1px 8px black;
   }
   .contactMe {
-  display: none;}
-  
+    display: none;
+  }
 }

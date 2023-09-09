@@ -37,83 +37,23 @@
   }
 }
 
-/* 
-body {
-    margin: 0;
-    font-family: 'Muli', sans-serif;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-   */
-/* .background {
-  background: url("https://images.pexels.com/photos/1095624/pexels-photo-1095624.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")
-    center top no-repeat #252746;
-  background-size: cover;
-  display: block;
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-} */
-
-/* .background-texture {
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#0f0140e6),
-    to(rgba(255, 214, 117, 0.9))
-  );
-  background: linear-gradient(to top, #0f0140e6, rgba(255, 214, 117, 0.9));
-  background-size: cover;
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-} */
-
-.carousel {
-  /* width: 100%;
-  overflow-x: scroll;
-  padding: 30px;
-  padding-top: 80px;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; */
+.projectsContainer {
   width: 80vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.carousel__container {
-  /* white-space: nowrap;
-  margin: 70px 0px;
-  padding-bottom: 10px;
-  display: inline-block; */
-}
-
-.categories__title {
-  color: rgb(77, 55, 102);
-  font-size: 28px;
-  position: absolute;
-  padding-left: 30px;
-}
-
-.carousel-item {
+.project {
   width: 200px;
-  height: 250px;
-  border-radius: 20px;
-  background-color: #95bcd6;
+  height: min(250px, 95dvw);
+  width: min(250px, 95dvw);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 2px white solid;
   overflow: hidden;
   margin-right: 10px;
   margin-top: 70px;
-  display: inline-block;
   cursor: pointer;
   -webkit-transition: 1000ms all;
   transition: 1000ms all;
@@ -121,72 +61,74 @@ body {
   transform-origin: center left;
   position: relative;
 }
-
-.carousel-item:hover ~ .carousel-item {
-  -webkit-transform: translate3d(100px, 0, 0);
-  transform: translate3d(100px, 0, 0);
+.project .text {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 3px;
 }
 
-.carousel__container:hover .carousel-item {
+.project:hover ~ .project {
+  -webkit-transform: translate3d(125px, 0, 0);
+  transform: translate3d(125px, 0, 0);
   opacity: 0.3;
 }
 
-.carousel__container:hover .carousel-item:hover {
+.projectsContainer:hover .project:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   opacity: 1;
+  z-index: 1;
 }
 
-.carousel-item__img {
-  width: 200px;
-  height: 250px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.carousel-item__details {
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(rgba(0, 0, 0, 0.9)),
-    to(rgba(0, 0, 0, 0))
-  );
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  font-size: 10px;
-  opacity: 0;
-  -webkit-transition: 450ms opacity;
-  transition: 450ms opacity;
-  padding: 10px;
+.projectImg {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: o;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  display: none;
+  animation: growAndFadeIn 1s ease-in-out;
 }
-
-.carousel-item__details:hover {
-  opacity: 1;
+.project:hover .projectImg {
+  display: block;
 }
-
-.carousel-item__details span {
-  /* width: 10px;
-    height: 10px; */
-  font-size: 0.9rem;
-  color: #2ecc71;
-  /* background-color: white; */
+.text {
+  padding: 0 0 1em 1em;
 }
-
-.carousel-item__details .controls {
-  padding-top: 180px;
+.projectDetails .text h1 {
+  font-size: 3rem;
 }
-
-.carousel-item__details .carousel-item__details--title,
-.carousel-item__details--subtitle {
-  color: #fff;
-  margin: 5px 0;
+.projectDetails .text h6 {
+  font-size: 1.2rem;
+}
+.technologies {
+  display: flex;
+  margin-top: auto;
+  position: absolute;
+  bottom: 10px;
+  justify-content: space-evenly;
+  padding: 0 0.4em;
+}
+.project:hover .technologies {
+  display: none;
+}
+.technology {
+  width: 27%;
+}
+@keyframes growAndFadeIn {
+  0% {
+    transform: scale(6);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
