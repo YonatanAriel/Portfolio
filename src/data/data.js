@@ -113,7 +113,7 @@ export const projects = [
     img: "src/assets/1692049251885.jpeg",
   },
   {
-    name: "Hamin Hasela Haze",
+    name: "B&B",
     description: "A website for a B&B",
     technologies: [
       { name: "React", icon: "src/assets/icons8-react-native-500.png" },
@@ -130,7 +130,7 @@ export const projects = [
         icon: "src/assets/icons8-github-250.png",
       },
     ],
-    img: "src/assets/1692049251885.jpeg",
+    img: "src/assets/‏‏צילום מסך (11).png",
   },
   {
     name: "Memory",
@@ -180,6 +180,6 @@ export const projects = [
         icon: "src/assets/icons8-github-250.png",
       },
     ],
-    img: "src/assets/‏‏צילום מסך (10).png",
+    img: "",
   },
 ];

@@ -3,14 +3,17 @@ import { projects } from "../../../data/data";
 
 function Projects() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div>Projects</div>
 
-      <section className={styles.projectsContainer}>
-        s{" "}
+      <div className={styles.projectsContainer}>
         {projects.map((p) => (
           <div className={styles.project}>
-            <img className={styles.projectImg} src={p.img} alt="people" />
+            <img
+              className={styles.projectImg}
+              src={p.img}
+              alt={p.description}
+            />
             <div className={styles.bgColor}></div>
             <div className={styles.projectDetails}>
               <div className={styles.text}>
@@ -19,21 +22,25 @@ function Projects() {
               </div>
               <div className={styles.technologies}>
                 {p.technologies.map((t) => (
-                  <img src={t.icon} className={styles.technology} />
+                  <img
+                    src={t.icon}
+                    alt={t.name}
+                    className={styles.technology}
+                  />
                 ))}
               </div>
               <div className={styles.projectLinks}>
                 {p.links.map((l) => (
                   <a href={l.src} target="_blank">
-                    <img src={l.icon} alt="" />
+                    <img src={l.icon} alt={l.name} />
                   </a>
                 ))}
               </div>
             </div>
           </div>
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

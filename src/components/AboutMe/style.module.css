@@ -173,17 +173,18 @@
   }
   .facts {
     gap: 0.5em;
-  }
-}
-@media screen and (max-width: 1210px) {
-  .facts {
     align-items: center;
   }
 }
-@media screen and (max-width: 600px) and (min-width: 400px) {
+@media screen and (max-width: 1000px) {
   .container {
-    width: 73vw;
+    max-width: 90vw;
   }
+}
+@media screen and (max-width: 600px) and (min-width: 400px) {
+  /* .container {
+    width: 73vw;
+  } */
 }
 
 @media screen and (max-width: 600px) {
