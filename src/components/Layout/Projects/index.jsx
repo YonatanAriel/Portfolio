@@ -24,7 +24,11 @@ function Projects() {
           src: "sdf",
           icon: "src/assets/icons8-github-250.png",
         },
-        { website: "sdgsd", src: "dfgf", icon: "ascf" },
+        {
+          name: "Website",
+          src: "dgf",
+          icon: "src/assets/icons8-website-96.png",
+        },
       ],
       img: "https://images.pexels.com/photos/1964471/pexels-photo-1964471.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
     },
@@ -59,6 +63,17 @@ function Projects() {
                 className={styles.technology}
               />
             </div>
+            <div className={styles.projectLinks}>
+              <a href={projects[0].links[0].src}>
+                <img src={projects[0].links[0].icon} alt="" />
+              </a>
+              <a href={projects[0].links[1].src}>
+                <img src={projects[0].links[1].icon} alt="" />
+              </a>
+              <a href={projects[0].links[2].src}>
+                <img src={projects[0].links[2].icon} alt="" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -68,18 +83,6 @@ function Projects() {
             src="https://images.pexels.com/photos/708392/pexels-photo-708392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="people"
           />
-          {/* <div className={styles.project__details"]}>
-              <div className={styles["controls"]}>
-                <span className={styles["fas fa-play-circle"]}></span>
-                <span className={styles["fas fa-plus-circle"]}></span>
-              </div>
-              <h5 className={styles.project__details--title"]}>
-                Descriptive Title
-              </h5>
-              <h6 className={styles.project__details--subtitle"]}>
-                Date and Duration
-              </h6>
-            </div> */}
         </div>
 
         <div className={styles.project}>
@@ -88,18 +91,6 @@ function Projects() {
             src="https://images.pexels.com/photos/1785001/pexels-photo-1785001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="people"
           />
-          {/* <div className={styles.project__details"]}>
-              <div className={styles["controls"]}>
-                <span className={styles["fas fa-play-circle"]}></span>
-                <span className={styles["fas fa-plus-circle"]}></span>
-              </div>
-              <h5 className={styles.project__details--title"]}>
-                Descriptive Title
-              </h5>
-              <h6 className={styles.project__details--subtitle"]}>
-                Date and Duration
-              </h6>
-            </div> */}
         </div>
         <div className={styles.project}>
           <img
@@ -107,18 +98,6 @@ function Projects() {
             src="https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt="people"
           />
-          {/* <div className={styles.project__details"]}>
-              <div className={styles["controls"]}>
-                <span className={styles["fas fa-play-circle"]}></span>
-                <span className={styles["fas fa-plus-circle"]}></span>
-              </div>
-              <h5 className={styles.project__details--title"]}>
-                Descriptive Title
-              </h5>
-              <h6 className={styles.project__details--subtitle"]}>
-                Date and Duration
-              </h6>
-            </div> */}
         </div>
         <div className={styles.project}>
           <img
@@ -126,18 +105,6 @@ function Projects() {
             src="https://images.pexels.com/photos/1071882/pexels-photo-1071882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="people"
           />
-          {/* <div className={styles.project__details"]}>
-              <div className={styles["controls"]}>
-                <span className={styles["fas fa-play-circle"]}></span>
-                <span className={styles["fas fa-plus-circle"]}></span>
-              </div>
-              <h5 className={styles.project__details--title"]}>
-                Descriptive Title
-              </h5>
-              <h6 className={styles.project__details--subtitle"]}>
-                Date and Duration
-              </h6>
-            </div> */}
         </div>
         <div className={styles.project}>
           <img
@@ -145,18 +112,6 @@ function Projects() {
             src="https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt="people"
           />
-          {/* <div className={styles.project__details"]}>
-              <div className={styles["controls"]}>
-                <span className={styles["fas fa-play-circle"]}></span>
-                <span className={styles["fas fa-plus-circle"]}></span>
-              </div>
-              <h5 className={styles.project__details--title"]}>
-                Descriptive Title
-              </h5>
-              <h6 className={styles.project__details--subtitle"]}>
-                Date and Duration
-              </h6>
-            </div> */}
         </div>
         <div className={styles.project}>
           <img
@@ -164,18 +119,6 @@ function Projects() {
             src="https://images.pexels.com/photos/6945/sunset-summer-golden-hour-paul-filitchkin.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="people"
           />
-          {/* <div className={styles.project__details"]}>
-              <div className={styles["controls"]}>
-                <span className={styles["fas fa-play-circle"]}></span>
-                <span className={styles["fas fa-plus-circle"]}></span>
-              </div>
-              <h5 className={styles.project__details--title"]}>
-                Descriptive Title
-              </h5>
-              <h6 className={styles.project__details--subtitle"]}>
-                Date and Duration
-              </h6>
-        </div>*/}
         </div>
       </section>
     </div>
