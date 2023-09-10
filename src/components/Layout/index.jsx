@@ -7,6 +7,7 @@ import Triangle from "./Triangle";
 import styles from "./style.module.css";
 import { useState, useEffect, createContext } from "react";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 function Layout() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -55,6 +56,7 @@ function Layout() {
             <Triangle />
             <SideBar />
             <About />
+            <Skills />
             <Projects />
             {/* <button
               style={{
