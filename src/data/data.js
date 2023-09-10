@@ -1,32 +1,33 @@
 export const topSkillsLogos = [
-    "src/assets/icons8-react-native-500.png",
-    "src/assets/icons8-javascript-500.png",
-    "src/assets/icons8-node-js-512.png",
-    "src/assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png",
-    "src/assets/icons8-sql-100.png",
-    "src/assets/icons8-redux-500.png",
-  ];
+  "src/assets/icons8-react-native-500.png",
+  "src/assets/icons8-javascript-500.png",
+  "src/assets/icons8-node-js-512.png",
+  "src/assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png",
+  "src/assets/icons8-sql-100.png",
+  "src/assets/icons8-redux-500.png",
+];
 
-  export const sideBarLinks = [
-    { to: "sms:0585940960", icon: "src/assets/icons8-old-phone-64.png" },
-    {
-      to: "https://www.linkedin.com/in/yonatan-ariel/",
-      icon: "src/assets/icons8-linkedin-250.png",
-    },
-    {
-      to: "https://api.whatsapp.com/send?phone=0585940960",
-      icon: "src/assets/icons8-whatsapp-240.png",
-    },
-    { to: "mailTo:yonatanariel1000", icon: "src/assets/icons8-email-64.png" },
-  ];
+export const sideBarLinks = [
+  { to: "sms:0585940960", icon: "src/assets/icons8-old-phone-64.png" },
+  {
+    to: "https://www.linkedin.com/in/yonatan-ariel/",
+    icon: "src/assets/icons8-linkedin-250.png",
+  },
+  {
+    to: "https://api.whatsapp.com/send?phone=0585940960",
+    icon: "src/assets/icons8-whatsapp-240.png",
+  },
+  { to: "mailTo:yonatanariel1000", icon: "src/assets/icons8-email-64.png" },
+];
 
-  export const headerLinks = [
-    { text: "About", destiny: "about me" },
-    { text: "Projects", destiny: "projects" },
-    { text: "Skills", destiny: "skills" },
-  ];
+export const headerLinks = [
+  { text: "About", destiny: "about me" },
+  { text: "Projects", destiny: "projects" },
+  { text: "Skills", destiny: "skills" },
+];
 
-  export const   aboutMeData = {bigScreenTxt:[
+export const aboutMeData = {
+  bigScreenTxt: [
     { txt: "Coding is my true love.", time: 3000 },
     { txt: "Driven by this passion, I'm highly motivated", time: 2000 },
     { txt: " to continuously expand my knowledge,", time: 2000 },
@@ -35,7 +36,7 @@ export const topSkillsLogos = [
     { txt: "I genuinely enjoy working with people and ", time: 2000 },
     { txt: "possess the capability to lead when necessary.", time: 2000 },
   ],
-  smallScreenTxt:[
+  smallScreenTxt: [
     { txt: "Coding is my true love.", time: 2800 },
     { txt: "Driven by this passion,  ", time: 3000 },
     { txt: "I'm highly motivated to", time: 2200 },
@@ -47,8 +48,8 @@ export const topSkillsLogos = [
     { txt: "with people and possess", time: 2200 },
     { txt: "the capability to lead", time: 2200 },
     { txt: "when necessary.", time: 2200 },
-  ]  , 
-  facts:[
+  ],
+  facts: [
     {
       text: "Single",
       img: "src/assets/icons8-account-100.png",
@@ -77,7 +78,108 @@ export const topSkillsLogos = [
       text: "Workout & Football",
       img: "src/assets/icons8-dumbbell-100.png",
     },
-  ]
-}
+  ],
+};
 
-
+export const projects = [
+  {
+    name: "Chexi",
+    description: "A music app",
+    technologies: [
+      { name: "React", icon: "src/assets/icons8-react-native-500.png" },
+      {
+        name: "MongoDB",
+        icon: "src/assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png",
+      },
+      { name: "NodeJS", icon: "src/assets/icons8-node-js-512.png" },
+    ],
+    links: [
+      {
+        name: "Github Frontend",
+        src: "https://github.com/YonatanAriel/Chexi",
+        icon: "src/assets/icons8-github-250.png",
+      },
+      {
+        name: "GitHub Backend",
+        src: "https://github.com/YonatanAriel/Chexi-server",
+        icon: "src/assets/icons8-github-250.png",
+      },
+      {
+        name: "Website",
+        src: "https://chexi.netlify.app/",
+        icon: "src/assets/icons8-website-96.png",
+      },
+    ],
+    img: "src/assets/1692049251885.jpeg",
+  },
+  {
+    name: "Hamin Hasela Haze",
+    description: "A website for a B&B",
+    technologies: [
+      { name: "React", icon: "src/assets/icons8-react-native-500.png" },
+      {
+        name: "Redux",
+        icon: "src/assets/icons8-redux-500.png",
+      },
+      { name: "CSS", icon: "src/assets/icons8-css-100.png" },
+    ],
+    links: [
+      {
+        name: "GitHub",
+        src: "https://github.com/YonatanAriel/Hamin-hasela-haze",
+        icon: "src/assets/icons8-github-250.png",
+      },
+    ],
+    img: "src/assets/1692049251885.jpeg",
+  },
+  {
+    name: "Memory",
+    description: "A Football memory game",
+    technologies: [
+      { name: "HTML", icon: "src/assets/icons8-html-100.png" },
+      {
+        name: "JS",
+        icon: "src/assets/icons8-javascript-500.png",
+      },
+      { name: "CSS", icon: "src/assets/icons8-css-100.png" },
+    ],
+    links: [
+      {
+        name: "Github",
+        src: "https://github.com/YonatanAriel/Football-Memory-Game",
+        icon: "src/assets/icons8-github-250.png",
+      },
+      {
+        name: "Website",
+        src: "https://football-field-memory-game.netlify.app/levels/levels.html",
+        icon: "src/assets/icons8-website-96.png",
+      },
+    ],
+    img: "src/assets/‏‏צילום מסך (10).png",
+  },
+  {
+    name: "Bemida",
+    description: "A website for a furniture start-up",
+    technologies: [
+      { name: "React", icon: "src/assets/icons8-react-native-500.png" },
+      {
+        name: "MongoDB",
+        icon: "src/assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png",
+      },
+      { name: "Express", icon: "src/assets/icons8-express-js-150.png" },
+    ],
+    links: [
+      {
+        name: "Github front",
+        src: "https://github.com/Bemida/client",
+        icon: "src/assets/icons8-github-250.png",
+      },
+      {
+        name: "Github back",
+        src: "https://github.com/Bemida/server",
+        icon: "src/assets/icons8-github-250.png",
+      },
+    ],
+    img: "src/assets/‏‏צילום מסך (10).png",
+  },
+];
