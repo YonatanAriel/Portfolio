@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import React from "react";
 
 function SkillText() {
-  return <div></div>;
+  return <div className={styles.container}>ervbsefbdf</div>;
 }
 
 export default SkillText;

@@ -1,0 +1,22 @@
+.container {
+  width: 60%;
+}
+.title {
+  font-size: 2.5rem;
+}
+.skillsContainer {
+  border: 2px solid white;
+  display: flex;
+  gap: 0.7em;
+  border-radius: 12px;
+  align-items: center;
+  padding: 0.4em 0.8em;
+  backdrop-filter: blur(5px);
+}
+.skillsContainer li {
+  flex: 1;
+}
+.skillsContainer img {
+  background-size: cover;
+  background-position: center;
+}

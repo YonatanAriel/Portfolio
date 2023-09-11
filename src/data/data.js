@@ -81,6 +81,105 @@ export const aboutMeData = {
   ],
 };
 
+export const skills = [
+  {
+    name: "Frotend",
+    content: [
+      { name: "React", icon: "src/assets/icons8-react-native-500.png" },
+      { name: "Next.JS 13", icon: "src/assets/image.png" },
+      { name: "JavaScript", icon: "src/assets/icons8-javascript-500.png" },
+      { name: "HTML5", icon: "src/assets/icons8-html-100.png" },
+      { name: "CSS3", icon: "src/assets/icons8-css-100.png" },
+      {
+        name: "Redux & Redux Toolkit",
+        icon: "src/assets/icons8-redux-500.png",
+      },
+      {
+        name: "Axios",
+        icon: "src/assets/574565_logo_axios-media-veed-remove-background.png",
+        invert: true,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "src/assets/icons8-tailwind-css-240.png",
+      },
+    ],
+  },
+  {
+    name: "Backend",
+    content: [
+      { name: "NodeJS", icon: "src/assets/icons8-node-js-512.png" },
+      { name: "Express", icon: "src/assets/icons8-express-js-150.png" },
+      { name: "SQL", icon: "src/assets/icons8-sql-100.png" },
+      {
+        name: "MongoDB",
+        icon: "src/assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png",
+      },
+      {
+        name: "Mongoose",
+        icon: "src/assets/274-2749343_mongoose-js-logo-hd-png-download-veed-remove-background.png",
+        invert: true,
+      },
+      {
+        name: "Rest APIs",
+        icon: "src/assets/1_mbP4Bjrs8Hshx7IgjsUNSg-veed-remove-background.png",
+        invert: true,
+      },
+      {
+        name: "Bcrypt",
+        icon: "src/assets/default_2be036aaca5c71baf790e00f1ef80dd37a625905.png",
+        invert: true,
+      },
+      {
+        name: "JsonWebToken",
+        icon: "src/assets/jw6371j74d-jwt-logo-json-web-token-authentication-with-node-js--veed-remove-background.png",
+        invert: true,
+      },
+      {
+        name: "Cors",
+        icon: "src/assets/1_IsJ26UWXB6WbcXSBUjXniQ-veed-remove-background.png",
+        invert: true,
+      },
+    ],
+  },
+  {
+    name: "Tools",
+    content: [
+      { name: "Jira", icon: "src/assets/icons8-jira-250.png" },
+      { name: "Figma", icon: "src/assets/icons8-figma-150.png" },
+      { name: "Git ", icon: "src/assets/icons8-git-150.png" },
+      { name: "GitHub", icon: "src/assets/icons8-github-250.png" },
+      { name: "VSCode", icon: "src/assets/icons8-vs-code-250.png" },
+      {
+        name: "PostMan",
+        icon: "src/assets/postman_logo_icon_144970.png",
+        invert: true,
+      },
+      {
+        name: "Netlify",
+        icon: "src/assets/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites.-96.png",
+      },
+      {
+        name: "Render",
+        icon: "src/assets/render-logo-818C47ACCA-seeklogo.com.png",
+        invert: true,
+      },
+    ],
+  },
+  {
+    name: "Soft",
+    content: [
+      { name: "Problem solver", icon: "" },
+      { name: "Quick Learner", icon: "" },
+      { name: "Multitasker", icon: "" },
+      { name: "People person", icon: "" },
+      { name: "Calm Under Pressure", icon: "" },
+      { name: "Reliable", icon: "" },
+      { name: "Adaptable", icon: "" },
+    ],
+  },
+];
+
 export const projects = [
   {
     name: "Chexi",
