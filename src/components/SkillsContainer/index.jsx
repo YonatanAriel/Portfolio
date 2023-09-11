@@ -3,10 +3,17 @@ import React from "react";
 
 function SkillsContainer({ skills, title, setHoveredSkill }) {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      // style={{ width: title === "Soft skills" ? "100%" : "" }}
+    >
       <h1 className={styles.title}>{title}</h1>
-      <ul className={styles.skillsContainer}>
-        {skills.map((skill) => (
+      <ul
+        className={`${styles.skillsContainer} ${
+          title === "Soft skills" && styles.softSkills
+        }`}
+      >
+        {skills.map((skill, i) => (
           <li
             key={skill.name}
             onMouseEnter={() =>
@@ -15,12 +22,19 @@ function SkillsContainer({ skills, title, setHoveredSkill }) {
             onMouseLeave={() =>
               setHoveredSkill({ skillsGroupName: null, skillName: null })
             }
+            style={{
+              flex: title !== "Soft skills" && 1,
+            }}
           >
-            <img
-              style={{ filter: skill.invert && "brightness(0) invert(100%)" }}
-              src={skill.icon}
-              alt=""
-            />
+            {title !== "Soft skills" ? (
+              <img
+                style={{ filter: skill.invert && "brightness(0) invert(100%)" }}
+                src={skill.icon}
+                alt=""
+              />
+            ) : (
+              <span className={styles.softSkill}>{skill.name}</span>
+            )}
           </li>
         ))}
       </ul>

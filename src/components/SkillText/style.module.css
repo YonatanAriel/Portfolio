@@ -5,14 +5,26 @@
   text-align: center;
 }
 
-.container span {
+.container div {
   font-size: 1.8em;
   /* display: inline-block; */
+  backdrop-filter: blur(100px);
+  /* padding: 1em; */
+  /* border: 2px white solid; */
+  width: fit-content;
+  margin: 0 auto;
+  display: none;
+  padding: 0.4em 0.7em;
+  border-radius: 5px;
+  /* border: 2px solid white; */
 }
 @media screen and (max-width: 850px) {
   .container {
     height: 3em;
     width: 100%;
     padding-top: 0.5em;
+  }
+  .container div {
+    padding: 0.2em 0.35em;
   }
 }

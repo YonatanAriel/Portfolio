@@ -167,7 +167,7 @@ export const skills = [
     ],
   },
   {
-    name: "Soft",
+    name: "Soft skills",
     content: [
       { name: "Problem solver", icon: "" },
       { name: "Quick Learner", icon: "" },

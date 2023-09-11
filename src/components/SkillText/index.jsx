@@ -11,7 +11,11 @@ function SkillText({ skillName, hoverdSkillsGroup, skillGroupName }) {
   return (
     // key={animationKey
     <div className={`${styles.container} `}>
-      <span>{hoverdSkillsGroup === skillGroupName && skillName}</span>
+      <div
+        style={{ display: hoverdSkillsGroup === skillGroupName ? "block" : "" }}
+      >
+        {hoverdSkillsGroup === skillGroupName && skillName}
+      </div>
     </div>
   );
 }

@@ -8,7 +8,7 @@ function Projects() {
 
       <div className={styles.projectsContainer}>
         {projects.map((p) => (
-          <div className={styles.project}>
+          <div key={p.img} className={styles.project}>
             <img
               className={styles.projectImg}
               src={p.img}
@@ -23,6 +23,7 @@ function Projects() {
               <div className={styles.technologies}>
                 {p.technologies.map((t) => (
                   <img
+                    key={t.icon}
                     src={t.icon}
                     alt={t.name}
                     className={styles.technology}
@@ -31,7 +32,7 @@ function Projects() {
               </div>
               <div className={styles.projectLinks}>
                 {p.links.map((l) => (
-                  <a href={l.src} target="_blank">
+                  <a key={l.src} href={l.src} target="_blank">
                     <img src={l.icon} alt={l.name} />
                   </a>
                 ))}
