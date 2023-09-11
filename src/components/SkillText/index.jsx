@@ -1,8 +1,19 @@
 import styles from "./style.module.css";
-import React from "react";
+// import { useEffect, useState } from "react";
 
-function SkillText() {
-  return <div className={styles.container}>ervbsefbdf</div>;
+function SkillText({ skillName, hoverdSkillsGroup, skillGroupName }) {
+  // const [animationKey, setAnimationKey] = useState(0);
+
+  // useEffect(() => {
+  //   setAnimationKey((prevKey) => prevKey + 1);
+  // }, [hoverdSkillsGroup, skillGroupName]);
+
+  return (
+    // key={animationKey
+    <div className={`${styles.container} `}>
+      <span>{hoverdSkillsGroup === skillGroupName && skillName}</span>
+    </div>
+  );
 }
 
 export default SkillText;

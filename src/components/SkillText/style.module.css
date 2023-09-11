@@ -1,3 +1,18 @@
 .container {
   width: 40%;
+  margin-top: auto;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.container span {
+  font-size: 1.8em;
+  /* display: inline-block; */
+}
+@media screen and (max-width: 850px) {
+  .container {
+    height: 3em;
+    width: 100%;
+    padding-top: 0.5em;
+  }
 }

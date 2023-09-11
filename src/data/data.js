@@ -135,11 +135,11 @@ export const skills = [
         icon: "src/assets/jw6371j74d-jwt-logo-json-web-token-authentication-with-node-js--veed-remove-background.png",
         invert: true,
       },
-      {
-        name: "Cors",
-        icon: "src/assets/1_IsJ26UWXB6WbcXSBUjXniQ-veed-remove-background.png",
-        invert: true,
-      },
+      // {
+      //   name: "Cors",
+      //   icon: "src/assets/1_IsJ26UWXB6WbcXSBUjXniQ-veed-remove-background.png",
+      //   invert: true,
+      // },
     ],
   },
   {
