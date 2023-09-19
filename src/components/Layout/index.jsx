@@ -17,10 +17,12 @@ function Layout() {
     "src/assets/alexander-ant-Ko9t_0YTJIU-unsplash.jpg",
     "src/assets/alexander-ant-TD1yxF6eb6A-unsplash (2).jpg",
   ];
-  const imagesToShow = imageSources.slice(
-    0,
-    screenWidth > 1100 ? 3 : screenWidth > 700 ? 2 : 1
-  );
+  const imagesToShow =
+    screenWidth > 1100
+      ? imageSources
+      : screenWidth > 700
+      ? imageSources.slice(0, 2)
+      : [imageSources[1]];
   useEffect(() => {
     const updateScreenWidth = () => {
       setScreenWidth(window.innerWidth);
@@ -43,6 +45,10 @@ function Layout() {
               src={src}
               style={{
                 width: imgWidth,
+                transform:
+                  src ==
+                    "src/assets/alexander-ant-TD1yxF6eb6A-unsplash (2).jpg" &&
+                  "rotate(180deg)",
               }}
             />
           ))}
