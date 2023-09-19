@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80vw;
+  z-index: 2;
+  margin-top: 7rem;
+}
+.container > h1 {
+  font-size: 4rem;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.72);
+}
+.skillCategoryContanier {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    gap: 0;
+  }
+  .skillCategoryContanier {
+    flex-direction: column;
+  }
+}

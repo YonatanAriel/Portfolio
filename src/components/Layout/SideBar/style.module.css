@@ -1,22 +1,23 @@
 .barContainer {
   position: fixed;
   top: 15vh;
-  left: 2.5rem;
+  left: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70vh;
-  background-color: white;
-  width: 4px;
-  z-index: 1;
-  border-radius: 100px;
-
+  width: 10px;
+  border-right: 4px solid white;
+  border-radius: 0 12px 12px 0;
+  z-index: 20;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0 3rem 0;
+  padding: 1.4rem 0 3rem 0;
   justify-content: space-between;
 }
 .barContainer a {
+  transform: translateX(5px);
+
   z-index: 2;
   overflow: visible;
   padding: 0.4rem;
@@ -32,10 +33,11 @@
   transition: transform 0.3s ease-out;
 }
 .barContainer a:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) translateX(4px);
 }
+
 .contactMe {
-  transform: translateX(-13px) rotate(270deg);
+  transform: translateX(-7px) rotate(270deg);
   font-weight: 900;
   font-family: "Quattrocento", serif;
   font-size: 1.2rem;
@@ -43,6 +45,7 @@
   width: 120px;
   margin-top: 2.5rem;
   text-shadow: 1px 1px 2px #474747;
+  margin-bottom: 11px;
 }
 .copied {
   font-weight: 900;
@@ -64,5 +67,28 @@
   }
   50% {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .barContainer {
+    bottom: 0px;
+    top: unset;
+    left: 1.5dvw;
+    width: 97dvw;
+    height: 10px;
+    flex-direction: row-reverse;
+    border-right: unset;
+    border-top: 4px solid white;
+    border-radius: 12px 12px 0 0;
+    justify-content: space-evenly;
+    padding: 0 0 2rem 0;
+  }
+  .barContainer a {
+    transform: translateY(-5px);
+    backdrop-filter: blur(100px);
+    box-shadow: 1px 1px 8px black;
+  }
+  .contactMe {
+    display: none;
   }
 }

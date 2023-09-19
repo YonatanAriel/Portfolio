@@ -1,11 +1,13 @@
-import FlyingSquares from "../FlyingSquares";
-import HeaderNav from "../HeaderNav";
+import FlyingSquares from "./FlyingSquares/index";
+import HeaderNav from "./HeaderNav";
 import Locomotive from "../Locomotive";
 import About from "./About";
 import SideBar from "./SideBar/index";
 import Triangle from "./Triangle";
 import styles from "./style.module.css";
 import { useState, useEffect, createContext } from "react";
+import Projects from "./Projects";
+import Skills from "./Skills";
 
 function Layout() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -60,6 +62,8 @@ function Layout() {
             <Triangle />
             <SideBar />
             <About />
+            <Skills />
+            <Projects />
             {/* <button
               style={{
                 position: "fixed",

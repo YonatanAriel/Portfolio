@@ -30,9 +30,7 @@
   transition: 400ms;
   transform: skewX(45deg) translateX(calc(var(--width) + 50%));
 }
-.glassIco:hover {
-  transform: translateY(-20px);
-}
+
 .glassIco:hover:before {
   transform: skewX(45deg) translateX(calc(var(--width) * -1 - 50%));
 }
@@ -46,4 +44,11 @@
 .glassIco img {
   border-radius: 5px;
   filter: hue-rotate(100deg); /* opacity: 1; */
+}
+@media screen and (max-width: 510px) {
+  .glassIco {
+    width: 25%;
+    height: 25%;
+    margin: 10px 2px;
+  }
 }
