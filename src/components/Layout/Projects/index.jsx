@@ -3,7 +3,7 @@ import { projects } from "../../../data/data";
 
 function Projects() {
   return (
-    <section className={styles.container}>
+    <section id="projects" className={styles.container}>
       <h1>Projects</h1>
 
       <div className={styles.projectsContainer}>

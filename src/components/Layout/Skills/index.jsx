@@ -13,7 +13,7 @@ function Skills() {
   const { screenWidth } = useContext(ScreenWidthContext);
 
   return (
-    <div className={styles.container}>
+    <div id="skills" className={styles.container}>
       <h1>Skills</h1>
       {skills.map((skillsGroup, i) => (
         <div key={skillsGroup.name} className={styles.skillCategoryContanier}>

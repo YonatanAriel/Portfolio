@@ -42,7 +42,7 @@
 .project:hover ~ .project {
   -webkit-transform: translate3d(125px, 0, 0);
   transform: translate3d(125px, 0, 0);
-  opacity: 0.3;
+  /* opacity: 0.3; */
 }
 
 .projectsContainer:hover .project:hover {
@@ -170,6 +170,16 @@
   .projectsContainer {
     justify-content: space-evenly;
   }
+}
+@media screen and (max-width: 650px) {
+  /* .project {
+    margin: 10px;
+  }
+  .project:hover ~ .project {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 1;
+  } */
 }
 @media screen and (max-width: 480px) {
   .projectsContainer {

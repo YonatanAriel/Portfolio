@@ -282,3 +282,12 @@ export const projects = [
     img: "",
   },
 ];
+
+export const contactLinks = [
+  { link: "", txt: "yonatanariel1000@gmail.com" },
+  { link: "", txt: "0585940960" },
+  { link: "", txt: "WhatsApp" },
+  { link: "", txt: "LinkedIn" },
+  { link: "", txt: "GitHub" },
+  { link: "", txt: "Resume" },
+];
