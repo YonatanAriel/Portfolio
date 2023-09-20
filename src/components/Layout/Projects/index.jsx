@@ -4,7 +4,7 @@ import { projects } from "../../../data/data";
 function Projects() {
   return (
     <section className={styles.container}>
-      <div>Projects</div>
+      <h1>Projects</h1>
 
       <div className={styles.projectsContainer}>
         {projects.map((p) => (

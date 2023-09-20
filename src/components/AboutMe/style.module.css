@@ -176,6 +176,14 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    border: 2px solid white;
+  }
+  .container > div:first-child {
+    border: none;
+  }
+}
 @media screen and (max-width: 1000px) {
   .container {
     max-width: 90vw;

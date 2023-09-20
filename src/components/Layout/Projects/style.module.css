@@ -1,41 +1,10 @@
 .container {
   z-index: 1;
-  margin: 0 auto;
+  margin: 7em auto 0;
 }
-.container > div:first-child {
-  background: radial-gradient(
-    ellipse at bottom,
-    #fff,
-    transparent,
-    transparent
-  );
-  background-position: 50% 100%;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.container > h1:first-child {
   font-size: 4rem;
-  font-family: "Playfair Display", serif;
-  animation: reveal 2000ms ease-in-out forwards 200ms,
-    glow 2000ms linear infinite 2000ms;
-  transition: opacity 1s ease-out 2s;
-  backdrop-filter: blur(2px);
-}
-
-@keyframes reveal {
-  80% {
-    letter-spacing: 8px;
-  }
-  100% {
-    background-size: 300% 300%;
-  }
-}
-
-@keyframes glow {
-  40% {
-    text-shadow: 0 0 8px #fff;
-  }
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.72);
 }
 
 .projectsContainer {

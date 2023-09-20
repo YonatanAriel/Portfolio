@@ -8,6 +8,7 @@ import styles from "./style.module.css";
 import { useState, useEffect, createContext } from "react";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import Contact from "./Contact";
 
 function Layout() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -64,6 +65,7 @@ function Layout() {
             <About />
             <Skills />
             <Projects />
+            <Contact />
             {/* <button
               style={{
                 position: "fixed",
