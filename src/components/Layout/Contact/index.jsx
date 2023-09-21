@@ -13,7 +13,7 @@ function Contact() {
       <h1>Contact</h1>
       <ul>
         {contactLinks.map((link) => (
-          <li>
+          <li key={link.to}>
             <img
               onClick={() => copyToClipboard(link.copy)}
               src="src/assets/icons8-copy-96.png"

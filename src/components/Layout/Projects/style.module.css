@@ -2,10 +2,16 @@
   z-index: 1;
   margin: 7em auto 0;
 }
-.container > h1:first-child {
-  font-size: 4rem;
+title {
+  font-size: 40rem;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.72);
+  /* animation: move 3s ease; */
 }
+/* @keyframes move {
+  0% {
+    transform: translateX(-200px);
+  }
+} */
 
 .projectsContainer {
   width: 80vw;
@@ -42,7 +48,6 @@
 .project:hover ~ .project {
   -webkit-transform: translate3d(125px, 0, 0);
   transform: translate3d(125px, 0, 0);
-  /* opacity: 0.3; */
 }
 
 .projectsContainer:hover .project:hover {
@@ -136,6 +141,7 @@
   opacity: 0;
   animation: jumpIn 0.5s ease-out 300ms forwards;
 }
+
 @keyframes jumpIn {
   0% {
     transform: translateY(0px);
