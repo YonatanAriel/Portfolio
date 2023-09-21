@@ -18,6 +18,13 @@ function FlyingSquares() {
       <li></li>
       <li></li>
       <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
   );
 }
