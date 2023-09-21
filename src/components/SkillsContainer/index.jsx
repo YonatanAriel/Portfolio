@@ -1,16 +1,27 @@
 import styles from "./style.module.css";
 import React from "react";
 
-function SkillsContainer({ skills, title, setHoveredSkill }) {
+function SkillsContainer({ skills, title, setHoveredSkill, index }) {
+  const animation = index % 2 === 0 ? "evenAnimation" : "oddAnimation";
   return (
     <div
       className={styles.container}
       // style={{ width: title === "Soft skills" ? "100%" : "" }}
     >
-      <h1 className={styles.title}>{title}</h1>
+      <h1
+        className={`${styles.title} ${styles[animation]}`}
+        style={{ animationDelay: `${index * 0.6}s` }}
+      >
+        {title}
+      </h1>
       <ul
+        style={{ animationDelay: `${index * 0.6}s` }}
         className={`${styles.skillsContainer} ${
           title === "Soft skills" && styles.softSkills
+        } ${
+          animation === "evenAnimation"
+            ? styles.oddAnimation
+            : styles.evenAnimation
         }`}
       >
         {skills.map((skill, i) => (

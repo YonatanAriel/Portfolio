@@ -28,6 +28,7 @@ function Skills() {
               />
             )}
           <SkillsContainer
+            index={i}
             skills={skillsGroup.content}
             title={skillsGroup.name}
             setHoveredSkill={setHoveredSkill}
