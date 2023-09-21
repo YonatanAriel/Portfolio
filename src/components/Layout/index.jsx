@@ -40,7 +40,7 @@ function Layout() {
   return (
     <>
       <div className={styles.backgroundImgs}>
-        {imagesToShow.map((src) => (
+        {/* {imagesToShow.map((src) => (
           <img
             alt=""
             key={src}
@@ -53,7 +53,11 @@ function Layout() {
                 "rotate(180deg)",
             }}
           />
-        ))}
+        ))} */}
+        <img
+          src="src/assets/brian-patrick-tagalog-_8hGFBxWD0A-unsplash (1).jpg"
+          alt=""
+        />
       </div>
       <div className={styles.backgroundColor}>
         <ScreenWidthContext.Provider value={{ screenWidth }}>

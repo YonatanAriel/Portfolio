@@ -15,7 +15,9 @@
   padding-bottom: 16px;
   padding-top: 7px;
   animation: fadeInAndGrow 1s ease-in-out;
+  transition: background-color 0.8s ease;
 }
+
 .triangle a {
   color: white;
   transform: rotate(51deg);
@@ -34,8 +36,8 @@
   transform: scale(0.95) translateX(-4px);
   opacity: 0.9;
   margin-right: 4.8px;
-  color: black;
 }
+
 .triangle a:first-child {
   margin-right: 32px;
 }

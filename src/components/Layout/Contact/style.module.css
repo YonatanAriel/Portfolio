@@ -8,7 +8,6 @@
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.72);
 }
 .container ul {
-  /* margin-bottom: 3em; */
   padding: 3em 1em 4em 1em;
   display: flex;
   flex-wrap: wrap;
@@ -26,11 +25,10 @@
   backdrop-filter: blur(1px);
   text-decoration: none;
   color: white;
-  transition: color 1s ease, transform 1s ease;
+  transition: transform 1s ease;
 }
 .container a:hover,
 .container a:focus {
-  color: rgba(0, 0, 0, 0.731);
   transform: scale(0.95);
 }
 .container li {
