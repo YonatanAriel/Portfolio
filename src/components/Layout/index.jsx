@@ -38,35 +38,34 @@ function Layout() {
   }, []);
 
   return (
-    <div className={styles.backgroundImg}>
-      <>
-        <div className={styles.gg}>
-          {imagesToShow.map((src) => (
-            <img
-              alt=""
-              key={src}
-              src={src}
-              style={{
-                width: imgWidth,
-                transform:
-                  src ==
-                    "src/assets/alexander-ant-TD1yxF6eb6A-unsplash (2).jpg" &&
-                  "rotate(180deg)",
-              }}
-            />
-          ))}
-        </div>
-        <div className={styles.backgroundColor}>
-          <ScreenWidthContext.Provider value={{ screenWidth }}>
-            <FlyingSquares />
-            <HeaderNav />
-            <Triangle />
-            <SideBar />
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-            {/* <button
+    <>
+      <div className={styles.backgroundImgs}>
+        {imagesToShow.map((src) => (
+          <img
+            alt=""
+            key={src}
+            src={src}
+            style={{
+              width: imgWidth,
+              transform:
+                src ==
+                  "src/assets/alexander-ant-TD1yxF6eb6A-unsplash (2).jpg" &&
+                "rotate(180deg)",
+            }}
+          />
+        ))}
+      </div>
+      <div className={styles.backgroundColor}>
+        <ScreenWidthContext.Provider value={{ screenWidth }}>
+          <FlyingSquares />
+          <HeaderNav />
+          <Triangle />
+          <SideBar />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          {/* <button
               style={{
                 position: "fixed",
                 left: 0,
@@ -78,11 +77,10 @@ function Layout() {
             // >
             //   Locomotive
             // </button>*/}
-          </ScreenWidthContext.Provider>
-        </div>
-        {/* {showLocomotive && <Locomotive />} */}
-      </>
-    </div>
+        </ScreenWidthContext.Provider>
+      </div>
+      {/* {showLocomotive && <Locomotive />} */}
+    </>
   );
 }
 

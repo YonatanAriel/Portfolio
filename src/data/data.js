@@ -284,10 +284,30 @@ export const projects = [
 ];
 
 export const contactLinks = [
-  { link: "", txt: "yonatanariel1000@gmail.com" },
-  { link: "", txt: "0585940960" },
-  { link: "", txt: "WhatsApp" },
-  { link: "", txt: "LinkedIn" },
-  { link: "", txt: "GitHub" },
-  { link: "", txt: "Resume" },
+  {
+    copy: "yonatanariel1000@gmail.com",
+    to: "mailTo:yonatanariel1000",
+    txt: "Email",
+  },
+  { copy: "0585940960", to: "sms:0585940960", txt: "Phone number" },
+  {
+    copy: "https://api.whatsapp.com/send?phone=0585940960",
+    to: "https://api.whatsapp.com/send?phone=0585940960",
+    txt: "WhatsApp",
+  },
+  {
+    copy: "https://www.linkedin.com/in/yonatan-ariel/",
+    to: "https://www.linkedin.com/in/yonatan-ariel/",
+    txt: "LinkedIn",
+  },
+  {
+    copy: "https://github.com/YonatanAriel",
+    to: "https://github.com/YonatanAriel",
+    txt: "GitHub",
+  },
+  {
+    copy: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
+    to: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
+    txt: "Resume",
+  },
 ];

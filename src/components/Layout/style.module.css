@@ -9,11 +9,11 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400vh;
+  /* height: 400vh; */
 
   /* min-width: 100dvw; */
 }
-.backgroundImg > .gg {
+.backgroundImgs {
   display: flex;
   position: fixed;
   top: 0;
@@ -21,15 +21,12 @@
   left: 0;
   bottom: 0;
   height: 100vh;
-  /* justify-content: space-between; */
   gap: 0.65%;
   max-width: 100vw;
 }
-.backgroundImg > .gg > img {
+.backgroundImgs > img {
   background-position: center;
   background-size: cover;
-  /* flex: 1 1 0; */
-  /* width: 32.9%; */
 }
 .backgroundImg > img {
   /* position: fixed;

@@ -7,7 +7,6 @@ function SideBar() {
 
   const copyToClipboard = async (text) => {
     try {
-      console.log("ll");
       await navigator.clipboard.writeText(text);
       setIsCopied(true);
       setTimeout(() => {
