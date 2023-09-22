@@ -5,7 +5,6 @@ function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1>Projects</h1>
-
       <div className={styles.projectsContainer}>
         {projects.map((p) => (
           <div key={p.img} className={styles.project}>
