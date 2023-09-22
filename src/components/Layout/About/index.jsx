@@ -3,12 +3,24 @@ import ProfilePhoto from "../../ProfilePhoto";
 import { useState, useEffect } from "react";
 import TopSkills from "../../TopSkills";
 import AboutMe from "../../AboutMe";
+import { useInView } from "react-intersection-observer";
 
 function About() {
   const [visibility, setVisibility] = useState({
     welcome: true,
     detailsDiv: false,
   });
+  const [intersectionVisibility, setIntersectionVisibility] = useState({
+    aboutMe: false,
+  });
+  const [aboutMeRef, aboutMeInView, aboutMeEntry] = useInView({
+    threshold: 0.8,
+  });
+  useEffect(() => {
+    if (aboutMeInView)
+      setIntersectionVisibility((prev) => ({ ...prev, aboutMe: true }));
+  }, [aboutMeInView]);
+
   useEffect(() => {
     const welcomeTimer = setTimeout(() => {
       setVisibility((prev) => ({ ...prev, welcome: false }));
@@ -64,7 +76,10 @@ function About() {
           </>
         )}
       </div>
-      <AboutMe />
+
+      <div style={{ zIndex: 1, width: "90vw" }} ref={aboutMeRef}>
+        {(aboutMeInView || intersectionVisibility.aboutMe) && <AboutMe />}
+      </div>
     </>
   );
 }

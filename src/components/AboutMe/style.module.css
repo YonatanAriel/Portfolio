@@ -1,8 +1,8 @@
 .container {
   margin: 0 auto;
   padding: 3em;
-  margin-top: 7rem;
-  width: 70%;
+  /* margin-top: 8rem; */
+  width: 100%;
   border-radius: 12px;
   z-index: 1;
   animation: fadeIn 1.5s ease-in-out;
@@ -159,11 +159,6 @@
   }
 }
 
-@media screen and (max-width: 1380px) {
-  .container {
-    width: 80%;
-  }
-}
 @media screen and (max-width: 1210px) {
   .container {
     width: 90vw;

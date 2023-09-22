@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   height: 80vh;
+  margin-bottom: 20vh;
 }
 .welcome div {
   background: radial-gradient(
@@ -117,6 +118,7 @@
   justify-content: space-evenly;
   border: 2px solid white;
   animation: fadeInUp 2.3s linear;
+  margin-bottom: 7.5em;
 }
 .topSkills div {
   border: 2px solid white;
@@ -156,7 +158,10 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(200px) scaleY(0.1);
+  }
+  70% {
+    opacity: 0.2;
   }
 }
 

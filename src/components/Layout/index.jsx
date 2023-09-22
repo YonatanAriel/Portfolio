@@ -14,26 +14,22 @@ import { useInView } from "react-intersection-observer";
 function Layout() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [visibility, setVisibility] = useState({
-    // about: false,
     skills: false,
     projects: false,
   });
 
-  // const [aboutRef, aboutInView, aboutEntry] = useInView({
-  //   threshold: 0,
-  // });
   const [skillsRef, skillsInView, skillsEntry] = useInView({
-    threshold: 0,
+    threshold: 0.4,
   });
   const [projectsRef, projectsInView, projectsEntry] = useInView({
     threshold: 0,
   });
   useEffect(() => {
-    console.log(projectsInView);
-    // if (aboutInView) setVisibility((prev) => ({ ...prev, about: true }));
     if (skillsInView) setVisibility((prev) => ({ ...prev, skills: true }));
     if (projectsInView) setVisibility((prev) => ({ ...prev, projects: true }));
   }, [skillsInView, projectsInView]);
+
+  useEffect(() => console.log(skillsInView), [skillsInView]);
 
   useEffect(() => {
     const updateScreenWidth = () => {
@@ -60,9 +56,7 @@ function Layout() {
           <HeaderNav />
           <Triangle />
           <SideBar />
-
           <About />
-
           <div ref={skillsRef}>
             {(skillsInView || visibility.skills) && <Skills />}
           </div>

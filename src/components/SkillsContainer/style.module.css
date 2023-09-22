@@ -63,10 +63,10 @@
 }
 
 .evenAnimation {
-  animation: translateLeft 1s ease-in-out forwards;
+  animation: translateLeft 1.3s ease-in-out forwards;
 }
 .oddAnimation {
-  animation: translateRight 1s ease-in-out forwards;
+  animation: translateRight 1.3s ease-in-out forwards;
 }
 @keyframes translateLeft {
   0% {
