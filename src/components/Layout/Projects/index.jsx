@@ -3,6 +3,7 @@ import { projects } from "../../../data/data";
 import { useEffect, useState } from "react";
 
 function Projects() {
+  const [projectOpacity, setProjectOpacity] = useState({});
   const [entryAnimationOff, setEntryAnimationOff] = useState(false);
   useEffect(() => {
     const turnOffAnimation = () => {
@@ -11,14 +12,20 @@ function Projects() {
     turnOffAnimation();
   }, []);
 
-  const showProject = (delay) => {
-    return setTimeout(() => {
-      console.log(delay);
-      return true;
-    }, delay);
-  };
+  useEffect(() => {
+    const opacityTimeouts = projects.map((_, i) => {
+      return setTimeout(() => {
+        setProjectOpacity((prevOpacity) => ({
+          ...prevOpacity,
+          [i]: true,
+        }));
+      }, i * 600);
+    });
 
-  const [projectOpacity, setProjectOpacity] = useState({});
+    return () => {
+      opacityTimeouts.forEach((timeout) => clearTimeout(timeout));
+    };
+  }, []);
   return (
     <section id="projects" className={styles.container}>
       <h1>Projects</h1>
@@ -27,7 +34,7 @@ function Projects() {
           <div
             style={{
               animation: setEntryAnimationOff && "none",
-              opacity: showProject(i * 0.35) ? 1 : 0,
+              opacity: projectOpacity[i] ? 1 : 0,
             }}
             key={p.img}
             className={styles.project}
