@@ -5,7 +5,7 @@ import TopSkills from "../../TopSkills";
 import AboutMe from "../../AboutMe";
 import { useInView } from "react-intersection-observer";
 
-function About() {
+function About({ projectsVisibility, setVisibleSectionsCount }) {
   const [visibility, setVisibility] = useState({
     welcome: true,
     detailsDiv: false,
@@ -35,6 +35,13 @@ function About() {
       clearTimeout(detailsTimer);
     };
   }, []);
+  useEffect(() => {
+    const updateSectionsVisibility = () => {
+      if (!intersectionVisibility.aboutMe || projectsVisibility) return;
+      setVisibleSectionsCount(2);
+    };
+    updateSectionsVisibility();
+  }, [intersectionVisibility.aboutMe]);
   return (
     <>
       <div className={styles.container}>
@@ -77,7 +84,11 @@ function About() {
         )}
       </div>
 
-      <div style={{ zIndex: 1, width: "90vw" }} ref={aboutMeRef}>
+      <div
+        style={{ zIndex: 1, width: "90vw", marginTop: "10rem" }}
+        ref={aboutMeRef}
+        id="about me"
+      >
         {(aboutMeInView || intersectionVisibility.aboutMe) && <AboutMe />}
       </div>
     </>

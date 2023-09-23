@@ -4,10 +4,7 @@ import React from "react";
 function SkillsContainer({ skills, title, setHoveredSkill, index }) {
   const animation = index % 2 === 0 ? "evenAnimation" : "oddAnimation";
   return (
-    <div
-      className={styles.container}
-      // style={{ width: title === "Soft skills" ? "100%" : "" }}
-    >
+    <div className={styles.container}>
       <h1
         className={`${styles.title} ${styles[animation]}`}
         style={{ animationDelay: `${index * 0.6}s` }}

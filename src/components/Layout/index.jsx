@@ -8,28 +8,29 @@ import { useState, useEffect, createContext } from "react";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
-
 import { useInView } from "react-intersection-observer";
+import { headerLinks } from "../../data/data";
 
 function Layout() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [visibility, setVisibility] = useState({
-    skills: false,
     projects: false,
   });
+  const [visibleSectionsCount, setVisibleSectionsCount] = useState(
+    visibility.projects ? 3 : 1
+  );
+  useEffect(() => console.log(visibleSectionsCount), [visibleSectionsCount]);
+  useEffect(() => {
+    if (!visibility.projects) return;
+    setVisibleSectionsCount(3);
+  }, [visibility.projects]);
 
-  const [skillsRef, skillsInView, skillsEntry] = useInView({
-    threshold: 0.4,
-  });
   const [projectsRef, projectsInView, projectsEntry] = useInView({
-    threshold: 0,
+    threshold: 1,
   });
   useEffect(() => {
-    if (skillsInView) setVisibility((prev) => ({ ...prev, skills: true }));
     if (projectsInView) setVisibility((prev) => ({ ...prev, projects: true }));
-  }, [skillsInView, projectsInView]);
-
-  useEffect(() => console.log(skillsInView), [skillsInView]);
+  }, [projectsInView]);
 
   useEffect(() => {
     const updateScreenWidth = () => {
@@ -42,6 +43,8 @@ function Layout() {
     };
   }, []);
 
+  const filteredHeaderLinks = headerLinks.slice(0, visibleSectionsCount);
+
   return (
     <>
       <div className={styles.backgroundImgs}>
@@ -53,14 +56,21 @@ function Layout() {
       <div className={styles.backgroundColor}>
         <ScreenWidthContext.Provider value={{ screenWidth }}>
           <FlyingSquares />
-          <HeaderNav />
+          <HeaderNav headerLinks={filteredHeaderLinks} />
           <Triangle />
           <SideBar />
-          <About />
-          <div ref={skillsRef}>
-            {(skillsInView || visibility.skills) && <Skills />}
+          <About
+            projectsVisibility={visibility.projects}
+            setVisibleSectionsCount={setVisibleSectionsCount}
+          />
+          <Skills
+            setVisibleSectionsCount={setVisibleSectionsCount}
+            projectsVisibility={visibility.projects}
+          />
+          <div id="projects" ref={projectsRef}>
+            {(projectsInView || visibility.projects) && <Projects />}
           </div>
-          <Projects />
+
           <Contact />
         </ScreenWidthContext.Provider>
       </div>

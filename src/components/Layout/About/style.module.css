@@ -118,7 +118,7 @@
   justify-content: space-evenly;
   border: 2px solid white;
   animation: fadeInUp 2.3s linear;
-  margin-bottom: 7.5em;
+  /* margin-bottom: 7.5em; */
 }
 .topSkills div {
   border: 2px solid white;

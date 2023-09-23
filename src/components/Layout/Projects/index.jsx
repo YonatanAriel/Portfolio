@@ -27,7 +27,7 @@ function Projects() {
     };
   }, []);
   return (
-    <section id="projects" className={styles.container}>
+    <section className={styles.container}>
       <h1>Projects</h1>
       <div className={styles.projectsContainer}>
         {projects.map((p, i) => (

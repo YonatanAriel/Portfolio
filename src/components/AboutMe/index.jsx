@@ -8,9 +8,7 @@ function AboutMe() {
   const { screenWidth } = useContext(ScreenWidthContext);
 
   const textLines =
-    screenWidth > 600
-      ? aboutMeData?.bigScreenTxt
-      :aboutMeData?.smallScreenTxt
+    screenWidth > 600 ? aboutMeData?.bigScreenTxt : aboutMeData?.smallScreenTxt;
 
   useEffect(() => {
     if (animationIndex < textLines.length) {
@@ -23,7 +21,7 @@ function AboutMe() {
   }, [animationIndex]);
 
   return (
-    <div id="about me" className={`${styles.container} d-flex`}>
+    <div className={`${styles.container} d-flex`}>
       <div>
         <h1>
           <span className={styles.aBit}>A bit</span> <span> about</span>

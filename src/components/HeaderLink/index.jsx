@@ -1,21 +1,18 @@
 import { Link } from "react-scroll";
 import styles from "./style.module.css";
 
-function HeaderLink({ text, destiny }) {
+function HeaderLink({ text, destiny, offset }) {
   return (
     <Link
       activeClass="active"
       to={destiny}
       spy={true}
       smooth={true}
-      offset={-80}
-      duration={500}
+      offset={offset}
+      duration={850}
       className={`${styles.HeaderLink} ${styles.card}`}
+      isDynamic={true}
     >
-      <span className={styles.top}></span>
-      <span className={styles.right}></span>
-      <span className={styles.bottom}></span>
-      <span className={styles.left}></span>
       {text}
     </Link>
   );

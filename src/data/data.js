@@ -21,9 +21,9 @@ export const sideBarLinks = [
 ];
 
 export const headerLinks = [
-  { text: "About", destiny: "about me" },
-  { text: "Projects", destiny: "projects" },
-  { text: "Skills", destiny: "skills" },
+  { text: "About", destiny: "about me", offset: -130 },
+  { text: "Skills", destiny: "skills", offset: -100 },
+  { text: "Projects", destiny: "projects", offset: 30 },
 ];
 
 export const aboutMeData = {
