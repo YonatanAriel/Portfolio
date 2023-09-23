@@ -34,7 +34,6 @@
   transform: translateX(-800px);
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.72);
   background-color: rgba(115, 115, 115, 0.435);
-  /* background-color: rgba(210, 210, 210, 0.144); */
 }
 .softSkills li:first-child {
   animation: moveRight 21s linear 21s infinite;
@@ -63,10 +62,10 @@
 }
 
 .evenAnimation {
-  animation: translateLeft 1.3s ease-in-out forwards;
+  animation: translateLeft 0.9s ease-in-out forwards;
 }
 .oddAnimation {
-  animation: translateRight 1.3s ease-in-out forwards;
+  animation: translateRight 0.9s ease-in-out forwards;
 }
 @keyframes translateLeft {
   0% {

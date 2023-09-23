@@ -88,6 +88,9 @@
     backdrop-filter: blur(100px);
     box-shadow: 1px 1px 8px black;
   }
+  .barContainer a:hover {
+    transform: scale(1.1) translateX(0) translateY(-15px);
+  }
   .contactMe {
     display: none;
   }

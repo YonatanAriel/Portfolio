@@ -36,35 +36,41 @@ function Skills({ projectsVisibility, setVisibleSectionsCount }) {
   return (
     <div id="skills" ref={skillsRef} className={styles.container}>
       <h1>Skills</h1>
-      {(skillsInView || visibility.skills) &&
-        skills.map((skillsGroup, i) => (
-          <div key={skillsGroup.name} className={styles.skillCategoryContanier}>
-            {screenWidth > 850 &&
-              i % 2 === 0 &&
-              skillsGroup.name !== "Soft skills" && (
-                <SkillText
-                  skillGroupName={skillsGroup.name}
-                  hoverdSkillsGroup={hoveredSkill.skillsGroupName}
-                  skillName={hoveredSkill.skillName}
-                />
-              )}
-            <SkillsContainer
-              index={i}
-              skills={skillsGroup.content}
-              title={skillsGroup.name}
-              setHoveredSkill={setHoveredSkill}
-            />
+      {(skillsInView || visibility.skills) && (
+        <>
+          {skills.map((skillsGroup, i) => (
+            <div
+              key={skillsGroup.name}
+              className={styles.skillCategoryContanier}
+            >
+              {screenWidth > 850 &&
+                i % 2 === 0 &&
+                skillsGroup.name !== "Soft skills" && (
+                  <SkillText
+                    skillGroupName={skillsGroup.name}
+                    hoverdSkillsGroup={hoveredSkill.skillsGroupName}
+                    skillName={hoveredSkill.skillName}
+                  />
+                )}
+              <SkillsContainer
+                index={i}
+                skills={skillsGroup.content}
+                title={skillsGroup.name}
+                setHoveredSkill={setHoveredSkill}
+              />
 
-            {(screenWidth < 850 || !(i % 2 === 0)) &&
-              skillsGroup.name !== "Soft skills" && (
-                <SkillText
-                  skillGroupName={skillsGroup.name}
-                  hoverdSkillsGroup={hoveredSkill.skillsGroupName}
-                  skillName={hoveredSkill.skillName}
-                />
-              )}
-          </div>
-        ))}
+              {(screenWidth < 850 || !(i % 2 === 0)) &&
+                skillsGroup.name !== "Soft skills" && (
+                  <SkillText
+                    skillGroupName={skillsGroup.name}
+                    hoverdSkillsGroup={hoveredSkill.skillsGroupName}
+                    skillName={hoveredSkill.skillName}
+                  />
+                )}
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }

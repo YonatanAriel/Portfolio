@@ -1,5 +1,4 @@
 import styles from "./style.module.css";
-import React from "react";
 
 function SkillsContainer({ skills, title, setHoveredSkill, index }) {
   const animation = index % 2 === 0 ? "evenAnimation" : "oddAnimation";

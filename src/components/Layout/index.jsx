@@ -19,14 +19,13 @@ function Layout() {
   const [visibleSectionsCount, setVisibleSectionsCount] = useState(
     visibility.projects ? 3 : 1
   );
-  useEffect(() => console.log(visibleSectionsCount), [visibleSectionsCount]);
   useEffect(() => {
     if (!visibility.projects) return;
     setVisibleSectionsCount(3);
   }, [visibility.projects]);
 
   const [projectsRef, projectsInView, projectsEntry] = useInView({
-    threshold: 1,
+    threshold: 0,
   });
   useEffect(() => {
     if (projectsInView) setVisibility((prev) => ({ ...prev, projects: true }));
@@ -44,7 +43,7 @@ function Layout() {
   }, []);
 
   const filteredHeaderLinks = headerLinks.slice(0, visibleSectionsCount);
-
+  useEffect(() => console.log(visibility.projects), [visibility.projects]);
   return (
     <>
       <div className={styles.backgroundImgs}>

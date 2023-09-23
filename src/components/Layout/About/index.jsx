@@ -85,7 +85,11 @@ function About({ projectsVisibility, setVisibleSectionsCount }) {
       </div>
 
       <div
-        style={{ zIndex: 1, width: "90vw", marginTop: "10rem" }}
+        style={{
+          zIndex: 1,
+          width: "90vw",
+          marginTop: "10rem",
+        }}
         ref={aboutMeRef}
         id="about me"
       >
