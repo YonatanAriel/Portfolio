@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 function HeaderLink({ text, destiny, offset }) {
   return (
     <Link
-      activeClass="active"
+      activeClass={styles.activeLink}
       to={destiny}
       spy={true}
       smooth={true}

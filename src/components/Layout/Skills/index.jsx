@@ -43,7 +43,6 @@ function Skills({ projectsVisibility, setVisibleSectionsCount }) {
               i % 2 === 0 &&
               skillsGroup.name !== "Soft skills" && (
                 <SkillText
-                  // index={i}
                   skillGroupName={skillsGroup.name}
                   hoverdSkillsGroup={hoveredSkill.skillsGroupName}
                   skillName={hoveredSkill.skillName}
@@ -59,7 +58,6 @@ function Skills({ projectsVisibility, setVisibleSectionsCount }) {
             {(screenWidth < 850 || !(i % 2 === 0)) &&
               skillsGroup.name !== "Soft skills" && (
                 <SkillText
-                  // index={i}
                   skillGroupName={skillsGroup.name}
                   hoverdSkillsGroup={hoveredSkill.skillsGroupName}
                   skillName={hoveredSkill.skillName}
