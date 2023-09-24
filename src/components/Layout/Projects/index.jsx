@@ -39,11 +39,13 @@ function Projects({ screenWidth }) {
     setCurrentEmbedId(embedId);
     setShowBackgroundVideo(true);
   };
-  const turnOffVideo = () => setShowBackgroundVideo(false);
-
+  const turnOffVideo = () => {
+    setShowBackgroundVideo(false);
+    setCurrentEmbedId(null);
+  };
   return (
     <>
-      {showBackgroundVideo && screenWidth > 1200 && (
+      {showBackgroundVideo && screenWidth > 1200 && currentEmbedId && (
         <BackgroundVideo embedId={currentEmbedId} />
       )}
       <section className={styles.container}>

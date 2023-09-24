@@ -179,7 +179,7 @@ export const projects = [
   {
     name: "Chexi",
     description: "A music app",
-    embedId: "T-xQSOIJyGA",
+    embedId: "jwihEcUi6Mo",
     technologies: [
       { name: "React", icon: "src/assets/icons8-react-native-500.png" },
       {
@@ -210,7 +210,7 @@ export const projects = [
   {
     name: "B&B",
     description: "A website for a B&B",
-    embedId: "3dc-O-qklSY",
+    embedId: "yaalZNCi2XA",
 
     technologies: [
       { name: "React", icon: "src/assets/icons8-react-native-500.png" },
@@ -232,7 +232,7 @@ export const projects = [
   {
     name: "Memory",
     description: "A Football memory game",
-    embedId: "fptYx9YBY3w",
+    embedId: "f_U-jYMibRc",
     technologies: [
       { name: "HTML", icon: "src/assets/icons8-html-100.png" },
       {

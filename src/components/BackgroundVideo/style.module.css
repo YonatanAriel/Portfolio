@@ -1,9 +1,9 @@
 .videoResponsive {
   position: fixed;
-  top: -100px;
-  bottom: -100px;
-  right: -100px;
-  left: -100px;
+  top: -60px;
+  bottom: -60px;
+  right: -5px;
+  left: -5px;
   pointer-events: none;
 }
 
@@ -11,4 +11,12 @@
   pointer-events: none;
   height: 100%;
   width: 100%;
+}
+.backgroundColor {
+  background-color: rgba(0, 0, 0, 0.562);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
