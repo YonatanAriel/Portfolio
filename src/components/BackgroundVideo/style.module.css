@@ -1,0 +1,14 @@
+.videoResponsive {
+  position: fixed;
+  top: -100px;
+  bottom: -100px;
+  right: -100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.videoResponsive iframe {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+}

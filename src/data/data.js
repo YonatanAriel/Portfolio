@@ -135,11 +135,6 @@ export const skills = [
         icon: "src/assets/jw6371j74d-jwt-logo-json-web-token-authentication-with-node-js--veed-remove-background.png",
         invert: true,
       },
-      // {
-      //   name: "Cors",
-      //   icon: "src/assets/1_IsJ26UWXB6WbcXSBUjXniQ-veed-remove-background.png",
-      //   invert: true,
-      // },
     ],
   },
   {
@@ -184,6 +179,7 @@ export const projects = [
   {
     name: "Chexi",
     description: "A music app",
+    embedId: "T-xQSOIJyGA",
     technologies: [
       { name: "React", icon: "src/assets/icons8-react-native-500.png" },
       {
@@ -214,6 +210,8 @@ export const projects = [
   {
     name: "B&B",
     description: "A website for a B&B",
+    embedId: "3dc-O-qklSY",
+
     technologies: [
       { name: "React", icon: "src/assets/icons8-react-native-500.png" },
       {
@@ -234,6 +232,7 @@ export const projects = [
   {
     name: "Memory",
     description: "A Football memory game",
+    embedId: "fptYx9YBY3w",
     technologies: [
       { name: "HTML", icon: "src/assets/icons8-html-100.png" },
       {

@@ -43,7 +43,6 @@ function Layout() {
   }, []);
 
   const filteredHeaderLinks = headerLinks.slice(0, visibleSectionsCount);
-  useEffect(() => console.log(visibility.projects), [visibility.projects]);
   return (
     <>
       <div className={styles.backgroundImgs}>
@@ -67,7 +66,9 @@ function Layout() {
             projectsVisibility={visibility.projects}
           />
           <div id="projects" ref={projectsRef}>
-            {(projectsInView || visibility.projects) && <Projects />}
+            {(projectsInView || visibility.projects) && (
+              <Projects screenWidth={screenWidth} />
+            )}
           </div>
 
           <Contact />
