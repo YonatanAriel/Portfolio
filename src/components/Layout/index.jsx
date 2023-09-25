@@ -71,7 +71,7 @@ function Layout() {
             )}
           </div>
 
-          <Contact />
+          <Contact screenWidth={screenWidth} />
         </ScreenWidthContext.Provider>
       </div>
     </>

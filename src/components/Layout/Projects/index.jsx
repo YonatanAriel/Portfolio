@@ -28,11 +28,6 @@ function Projects({ screenWidth }) {
     };
   }, []);
 
-  // const [selectedProject, setSelectedProject] = useState(null);
-  // const handleProjectSelect = (index) => {
-  //   setSelectedProject(selectedProject === index ? null : index);
-  // };
-
   const [currentEmbedId, setCurrentEmbedId] = useState();
   const [showBackgroundVideo, setShowBackgroundVideo] = useState(false);
   const playVideo = (embedId) => {
@@ -61,7 +56,6 @@ function Projects({ screenWidth }) {
               }}
               key={p.img}
               className={styles.project}
-              onClick={() => handleProjectSelect(i)} /** */
             >
               <img
                 className={styles.projectImg}

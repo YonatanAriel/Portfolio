@@ -287,26 +287,36 @@ export const contactLinks = [
     copy: "yonatanariel1000@gmail.com",
     to: "mailTo:yonatanariel1000",
     txt: "Email",
+    img: "src/assets/icons8-email-64.png",
   },
-  { copy: "0585940960", to: "sms:0585940960", txt: "Phone number" },
+  {
+    copy: "0585940960",
+    to: "sms:0585940960",
+    txt: "Phone number",
+    img: "src/assets/icons8-phone-64.png",
+  },
   {
     copy: "https://api.whatsapp.com/send?phone=0585940960",
     to: "https://api.whatsapp.com/send?phone=0585940960",
     txt: "WhatsApp",
+    img: "src/assets/icons8-whatsapp-256.png",
   },
   {
     copy: "https://www.linkedin.com/in/yonatan-ariel/",
     to: "https://www.linkedin.com/in/yonatan-ariel/",
     txt: "LinkedIn",
+    img: "src/assets/icons8-linkedin-250.png",
   },
   {
     copy: "https://github.com/YonatanAriel",
     to: "https://github.com/YonatanAriel",
     txt: "GitHub",
+    img: "src/assets/icons8-github-250.png",
   },
   {
     copy: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
     to: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
     txt: "Resume",
+    img: "src/assets/icons8-resume-50.png",
   },
 ];
