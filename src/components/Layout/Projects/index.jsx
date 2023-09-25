@@ -58,11 +58,13 @@ function Projects({ screenWidth }) {
               key={p.img}
               className={styles.project}
             >
-              <img
-                className={styles.projectImg}
-                src={p.img}
-                alt={p.description}
-              />
+              {p.img && (
+                <img
+                  className={styles.projectImg}
+                  src={p.img}
+                  alt={p.description}
+                />
+              )}
               <div className={styles.bgColor}></div>
               <div className={styles.projectDetails}>
                 <div className={styles.text}>

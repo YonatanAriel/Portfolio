@@ -278,7 +278,6 @@ export const projects = [
         icon: "/assets/icons8-github-250.png",
       },
     ],
-    img: "",
   },
 ];
 
