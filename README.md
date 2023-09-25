@@ -9,7 +9,7 @@
 I built this website using the following technologies:
 
 - React
-- Pure CSS
+- CSS
 - React Scroll
 - React-Interaction-Observer
 
