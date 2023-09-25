@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 import { projects } from "../../../data/data";
 import { useEffect, useState } from "react";
 import BackgroundVideo from "../../BackgroundVideo";
+import Tooltip from "../../Tooltip";
 
 function Projects({ screenWidth }) {
   const [projectOpacity, setProjectOpacity] = useState({});
@@ -80,8 +81,10 @@ function Projects({ screenWidth }) {
                 </div>
                 <div className={styles.projectLinks}>
                   {p.links.map((l) => (
-                    <a key={l.src} href={l.src} target="_blank">
-                      <img src={l.icon} alt={l.name} />
+                    <a href={l.src} target="_blank">
+                      <Tooltip key={l.src} text={l.name}>
+                        <img src={l.icon} alt={l.name} />
+                      </Tooltip>
                     </a>
                   ))}
                 </div>
