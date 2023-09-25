@@ -1,7 +1,6 @@
 import styles from "./style.module.css";
 
 function BackgroundVideo({ embedId }) {
-  // const videoScale =
   return (
     <div className={styles.videoResponsive}>
       <div className={styles.backgroundColor}></div>

@@ -6,7 +6,7 @@
   width: 200px;
   height: 200px;
   margin: auto;
-  background-image: url("src/assets/profile-pic (10).png");
+  background-image: url("/assets/profile-pic (10).png");
   filter: grayscale(1);
   background-position: center;
   background-size: contain;
@@ -14,8 +14,6 @@
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
   animation: morphing 10s infinite, fade-in 1.8s linear;
   overflow: hidden;
-  /* border: 2px solid rgb(97, 1, 1); */
-  /* outline: 2px solid white; */
   border: 2px solid white;
 }
 

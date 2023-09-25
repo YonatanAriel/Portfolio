@@ -61,8 +61,6 @@ li {
 }
 .column {
   width: 100%;
-  /* max-width: 50%;
-  padding: 1.5rem; */
 }
 @media screen and (max-width: 1390px) {
   .m-width {

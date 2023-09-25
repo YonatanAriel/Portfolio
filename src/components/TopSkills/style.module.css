@@ -43,7 +43,7 @@
 }
 .glassIco img {
   border-radius: 5px;
-  filter: hue-rotate(100deg); /* opacity: 1; */
+  filter: hue-rotate(100deg);
 }
 @media screen and (max-width: 510px) {
   .glassIco {

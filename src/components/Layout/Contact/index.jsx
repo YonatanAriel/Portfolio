@@ -21,7 +21,7 @@ function Contact({ screenWidth }) {
             )}
             <img
               onClick={() => copyToClipboard(link.copy)}
-              src="src/assets/icons8-copy-96.png"
+              src="/assets/icons8-copy-96.png"
               alt=""
             />
             <a href={link.to}>{link.txt}</a>

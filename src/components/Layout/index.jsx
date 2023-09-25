@@ -47,7 +47,7 @@ function Layout() {
     <>
       <div className={styles.backgroundImgs}>
         <img
-          src="src/assets/brian-patrick-tagalog-_8hGFBxWD0A-unsplash (1).jpg"
+          src="/assets/brian-patrick-tagalog-_8hGFBxWD0A-unsplash (1).jpg"
           alt=""
         />
       </div>

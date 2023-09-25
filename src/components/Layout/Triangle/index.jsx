@@ -17,11 +17,11 @@ function Triangle() {
               href="https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing"
               target="_blank"
             >
-              <img src="src/assets/icons8-resume-50.png" alt="" />
+              <img src="/assets/icons8-resume-50.png" alt="" />
               CV
             </a>
             <a href="https://github.com/YonatanAriel" target="_blank">
-              <img src="src/assets/icons8-github-250.png" alt="" />
+              <img src="/assets/icons8-github-250.png" alt="" />
               GH
             </a>
           </div>
@@ -30,7 +30,7 @@ function Triangle() {
             <img
               className={styles.hideTriangleArrow}
               onClick={hideTriangle}
-              src="src/assets/icons8-double-up-24.png"
+              src="/assets/icons8-double-up-24.png"
               alt=""
             />
           )}
@@ -42,7 +42,7 @@ function Triangle() {
             onClick={() => setShowTriangle(true)}
             className={styles.arrowTriangle}
           >
-            <img src="src/assets/icons8-double-up-24.png" alt="" />
+            <img src="/assets/icons8-double-up-24.png" alt="" />
             <span>CV & GH</span>
           </div>
           <div className={styles.arrowTriangleBorder}></div>
