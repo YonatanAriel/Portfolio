@@ -226,6 +226,11 @@ export const projects = [
         src: "https://github.com/YonatanAriel/Hamin-hasela-haze",
         icon: "/assets/icons8-github-250.png",
       },
+      {
+        name: "Website",
+        src: "https://hamin-hasela-haze.netlify.app/",
+        icon: "/assets/icons8-website-96.png",
+      },
     ],
     img: "/assets/‏‏צילום מסך (11).png",
   },
