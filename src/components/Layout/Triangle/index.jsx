@@ -14,7 +14,7 @@ function Triangle() {
         <>
           <div onClick={hideTriangle} className={styles.triangle}>
             <a
-              href="https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1SuBwOuJ8FmNli1n5D5jADp3HkDAtB0J_/view?usp=sharing"
               target="_blank"
             >
               <img src="/assets/icons8-resume-50.png" alt="" />
