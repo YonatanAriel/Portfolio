@@ -6,8 +6,6 @@
 
 ## Technologies Used
 
-I built this website using the following technologies:
-
 - React
 - CSS
 - React Scroll
