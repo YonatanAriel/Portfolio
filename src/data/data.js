@@ -63,7 +63,7 @@ export const aboutMeData = {
       img: "/assets/icons8-last-24-hours-64.png",
     },
     {
-      text: "22 Years Old",
+      text: "23 Years Old",
       img: "/assets/icons8-elderly-person-100.png",
     },
     {
@@ -86,7 +86,7 @@ export const skills = [
     name: "Frotend",
     content: [
       { name: "React", icon: "/assets/icons8-react-native-500.png" },
-      { name: "Next.JS 13", icon: "/assets/image.png" },
+      { name: "Next.JS", icon: "/assets/icons8-nextjs-1600.png" },
       { name: "JavaScript", icon: "/assets/icons8-javascript-500.png" },
       { name: "HTML5", icon: "/assets/icons8-html-100.png" },
       { name: "CSS3", icon: "/assets/icons8-css-100.png" },
@@ -208,6 +208,52 @@ export const projects = [
     img: "/assets/1692049251885.jpeg",
   },
   {
+    name: "UniChat",
+    description: "A chat app with automatic translation",
+    technologies: [
+      {
+        name: "Typescript",
+        icon: "/assets/icons8-typescript-384.png",
+      },
+      { name: "React", icon: "/assets/icons8-react-native-500.png" },
+      { name: "Socket io", icon: "/assets/socket-io.png" },
+    ],
+    links: [
+      {
+        name: "Github frontend",
+        src: "https://github.com/YonatanAriel/UniverChat",
+        icon: "/assets/icons8-github-250.png",
+      },
+      {
+        name: "Github backend",
+        src: "https://github.com/YonatanAriel/UniverChat-server",
+        icon: "/assets/icons8-github-250.png",
+      },
+    ],
+  },
+  {
+    name: "DevFolio",
+    description: "A place for developers to showcase projects",
+    technologies: [
+      {
+        name: "NextJS",
+        icon: "/assets/icons8-nextjs-1600.png",
+      },
+      {
+        name: "MongoDB",
+        icon: "/assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png",
+      },
+      { name: "Tailwind", icon: "/assets/icons8-tailwind-css-240.png" },
+    ],
+    links: [
+      {
+        name: "Github",
+        src: "https://github.com/YonatanAriel/DevFolio",
+        icon: "/assets/icons8-github-250.png",
+      },
+    ],
+  },
+  {
     name: "B&B",
     description: "A website for a B&B",
     embedId: "yaalZNCi2XA",
@@ -260,6 +306,7 @@ export const projects = [
     ],
     img: "/assets/‏‏צילום מסך (10).png",
   },
+
   {
     name: "Bemida",
     description: "A website for a furniture start-up",
@@ -273,12 +320,12 @@ export const projects = [
     ],
     links: [
       {
-        name: "Github front",
+        name: "Github frontend",
         src: "https://github.com/Bemida/client",
         icon: "/assets/icons8-github-250.png",
       },
       {
-        name: "Github back",
+        name: "Github backend",
         src: "https://github.com/Bemida/server",
         icon: "/assets/icons8-github-250.png",
       },
@@ -318,8 +365,10 @@ export const contactLinks = [
     img: "/assets/icons8-github-250.png",
   },
   {
-    copy: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
-    to: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
+    copy: "https://drive.google.com/file/d/1Hah_eIfamWwnLRncQtF4vMY25KXDdy94/view",
+    to: "https://drive.google.com/file/d/1Hah_eIfamWwnLRncQtF4vMY25KXDdy94/view",
+    // copy: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
+    // to: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
     txt: "Resume",
     img: "/assets/icons8-resume-50.png",
   },
