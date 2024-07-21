@@ -309,6 +309,7 @@ export const projects = [
 
   {
     name: "Bemida",
+    embedId: "6ZhFSk8Dt8M",
     description: "A website for a furniture start-up",
     technologies: [
       { name: "React", icon: "/assets/icons8-react-native-500.png" },
@@ -330,6 +331,7 @@ export const projects = [
         icon: "/assets/icons8-github-250.png",
       },
     ],
+    img: "/assets/bemida.png",
   },
 ];
 
@@ -367,8 +369,6 @@ export const contactLinks = [
   {
     copy: "https://drive.google.com/file/d/1Hah_eIfamWwnLRncQtF4vMY25KXDdy94/view",
     to: "https://drive.google.com/file/d/1Hah_eIfamWwnLRncQtF4vMY25KXDdy94/view",
-    // copy: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
-    // to: "https://drive.google.com/file/d/1kGp945ABszFEn5y-MgqUwPa9jtCI2lL0/view?usp=sharing",
     txt: "Resume",
     img: "/assets/icons8-resume-50.png",
   },
