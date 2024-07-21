@@ -251,6 +251,11 @@ export const projects = [
         src: "https://github.com/YonatanAriel/DevFolio",
         icon: "/assets/icons8-github-250.png",
       },
+      {
+        name: "Website",
+        src: "https://devfolio-gilt.vercel.app/",
+        icon: "/assets/icons8-website-96.png",
+      },
     ],
   },
   {
