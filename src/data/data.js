@@ -372,8 +372,8 @@ export const contactLinks = [
     img: "/assets/icons8-github-250.png",
   },
   {
-    copy: "https://drive.google.com/file/d/1Hah_eIfamWwnLRncQtF4vMY25KXDdy94/view",
-    to: "https://drive.google.com/file/d/1Hah_eIfamWwnLRncQtF4vMY25KXDdy94/view",
+    copy: "https://drive.google.com/file/d/1gWOt4PHezaOffMuWnL1LDfi0ROihvCSQ/view?usp=sharing",
+    to: "https://drive.google.com/file/d/1gWOt4PHezaOffMuWnL1LDfi0ROihvCSQ/view?usp=sharing",
     txt: "Resume",
     img: "/assets/icons8-resume-50.png",
   },
