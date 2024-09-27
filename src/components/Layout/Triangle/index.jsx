@@ -14,13 +14,18 @@ function Triangle() {
         <>
           <div onClick={hideTriangle} className={styles.triangle}>
             <a
-              href="https://drive.google.com/file/d/1Hah_eIfamWwnLRncQtF4vMY25KXDdy94/view"
+              href="https://drive.google.com/file/d/1gWOt4PHezaOffMuWnL1LDfi0ROihvCSQ/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src="/assets/icons8-resume-50.png" alt="" />
               CV
             </a>
-            <a href="https://github.com/YonatanAriel" target="_blank">
+            <a
+              href="https://github.com/YonatanAriel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/assets/icons8-github-250.png" alt="" />
               GH
             </a>
