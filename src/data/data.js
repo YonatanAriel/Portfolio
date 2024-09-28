@@ -201,7 +201,7 @@ export const projects = [
       },
       {
         name: "Website",
-        src: "https://chexi.netlify.app/",
+        src: "https://chexi.netlify.app/login?demo=true ",
         icon: "/assets/icons8-website-96.png",
       },
     ],
