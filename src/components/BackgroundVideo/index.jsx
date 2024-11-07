@@ -12,7 +12,7 @@ function BackgroundVideo({ embedId }) {
         allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media;
        allowFullScreen // title="
         Embedded
-        autoplay={1}
+        autoPlay={1}
         controls={0}
       />
     </div>

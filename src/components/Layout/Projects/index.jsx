@@ -32,6 +32,7 @@ function Projects({ screenWidth }) {
   const [currentEmbedId, setCurrentEmbedId] = useState();
   const [showBackgroundVideo, setShowBackgroundVideo] = useState(false);
   const playVideo = (embedId) => {
+    if (!embedId) return;
     setCurrentEmbedId(embedId);
     setShowBackgroundVideo(true);
   };

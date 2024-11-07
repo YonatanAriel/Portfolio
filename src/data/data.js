@@ -286,6 +286,32 @@ export const projects = [
     img: "/assets/‏‏צילום מסך (11).png",
   },
   {
+    name: "CSS Quiz",
+    description: "Margin Call - cascade me if you can",
+    embedId: "OJdFgHj3jHQ",
+    technologies: [
+      { name: "React", icon: "/assets/icons8-react-native-500.png" },
+      {
+        name: "Shadcn",
+        icon: "/assets/image-removebg-preview.png",
+      },
+      { name: "Vite", icon: "/assets/image.webp" },
+    ],
+    links: [
+      {
+        name: "GitHub",
+        src: "https://github.com/YonatanAriel/quiz",
+        icon: "/assets/icons8-github-250.png",
+      },
+      {
+        name: "Website",
+        src: "https://margin-call-css-quiz.vercel.ap`p/",
+        icon: "/assets/icons8-website-96.png",
+      },
+    ],
+    img: "/assets/margin-call.png",
+  },
+  {
     name: "Memory",
     description: "A Football memory game",
     embedId: "f_U-jYMibRc",
