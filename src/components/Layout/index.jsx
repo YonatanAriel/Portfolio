@@ -43,6 +43,7 @@ function Layout() {
   }, []);
 
   const filteredHeaderLinks = headerLinks.slice(0, visibleSectionsCount);
+
   return (
     <>
       <div className={styles.backgroundImgs}>
