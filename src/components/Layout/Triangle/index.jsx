@@ -1,12 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import styles from "./style.module.css";
 import { ScreenWidthContext } from "..";
 
-function Triangle() {
+function Triangle({ hideTriangle, showTriangle, setShowTriangle }) {
   const { screenWidth } = useContext(ScreenWidthContext);
-  const [showTriangle, setShowTriangle] = useState();
-
-  const hideTriangle = () => screenWidth < 870 && setShowTriangle(false);
 
   return (
     <>

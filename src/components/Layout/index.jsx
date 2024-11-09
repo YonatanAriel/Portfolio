@@ -10,6 +10,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import { useInView } from "react-intersection-observer";
 import { headerLinks } from "../../data/data";
+import useTriangle from "../../hooks/useTriangle";
 
 function Layout() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -44,6 +45,9 @@ function Layout() {
 
   const filteredHeaderLinks = headerLinks.slice(0, visibleSectionsCount);
 
+  const { showTriangle, setShowTriangle, hideTriangle } =
+    useTriangle(screenWidth);
+
   return (
     <>
       <div className={styles.backgroundImgs}>
@@ -56,9 +60,14 @@ function Layout() {
         <ScreenWidthContext.Provider value={{ screenWidth }}>
           <FlyingSquares />
           <HeaderNav headerLinks={filteredHeaderLinks} />
-          <Triangle />
+          <Triangle
+            showTriangle={showTriangle}
+            hideTriangle={hideTriangle}
+            setShowTriangle={setShowTriangle}
+          />
           <SideBar />
           <About
+            showTriangle={showTriangle}
             projectsVisibility={visibility.projects}
             setVisibleSectionsCount={setVisibleSectionsCount}
           />
@@ -80,4 +89,5 @@ function Layout() {
 }
 
 export default Layout;
+
 export const ScreenWidthContext = createContext();

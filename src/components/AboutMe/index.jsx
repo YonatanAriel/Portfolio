@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
 import styles from "./style.module.css";
+import { useState, useEffect, useContext } from "react";
 import { ScreenWidthContext } from "../Layout/index";
 import { aboutMeData } from "../../data/data";
 

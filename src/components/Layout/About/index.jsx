@@ -5,7 +5,7 @@ import TopSkills from "../../TopSkills";
 import AboutMe from "../../AboutMe";
 import { useInView } from "react-intersection-observer";
 
-function About({ projectsVisibility, setVisibleSectionsCount }) {
+function About({ projectsVisibility, setVisibleSectionsCount, showTriangle }) {
   const [visibility, setVisibility] = useState({
     welcome: true,
     detailsDiv: false,
@@ -56,7 +56,10 @@ function About({ projectsVisibility, setVisibleSectionsCount }) {
 
         {visibility.detailsDiv && (
           <>
-            <div className={`${styles.detailsContainer} d-flex  `}>
+            <div
+              style={{ margin: !showTriangle && "20px auto 0 auto" }}
+              className={`${styles.detailsContainer} d-flex  `}
+            >
               <div className={styles.textContainer}>
                 <div className="d-flex">
                   <p>Hey, i'm</p>

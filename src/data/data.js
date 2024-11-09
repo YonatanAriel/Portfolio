@@ -83,7 +83,7 @@ export const aboutMeData = {
 
 export const skills = [
   {
-    name: "Frotend",
+    name: "Frontend",
     content: [
       { name: "React", icon: "/assets/icons8-react-native-500.png" },
       { name: "Next.JS", icon: "/assets/icons8-nextjs-1600.png" },
