@@ -257,6 +257,7 @@ export const projects = [
         icon: "/assets/icons8-website-96.png",
       },
     ],
+    img: "/assets/צילום מסך 2024-11-08 035639.png",
   },
   {
     name: "B&B",

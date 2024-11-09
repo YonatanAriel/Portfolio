@@ -84,7 +84,12 @@ function Projects({ screenWidth }) {
                 </div>
                 <div className={styles.projectLinks}>
                   {p.links.map((l) => (
-                    <a href={l.src} target="_blank">
+                    <a
+                      href={l.src}
+                      key={l.src}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <Tooltip key={l.src} text={l.name}>
                         <img src={l.icon} alt={l.name} />
                       </Tooltip>

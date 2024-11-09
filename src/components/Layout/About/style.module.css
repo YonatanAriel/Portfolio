@@ -117,8 +117,7 @@
   max-width: 90dvw;
   justify-content: space-evenly;
   border: 2px solid white;
-  animation: fadeInUp 2.3s linear;
-  /* margin-bottom: 7.5em; */
+  animation: blur-in 1s ease-in-out alternate;
 }
 .topSkills div {
   border: 2px solid white;
@@ -128,7 +127,14 @@
     transform: scale(1);
   }
 }
-
+@keyframes blur-in {
+  0% {
+    filter: blur(100px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
 @keyframes fade-in {
   100% {
     opacity: 1;
