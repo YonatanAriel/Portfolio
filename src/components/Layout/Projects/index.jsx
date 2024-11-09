@@ -52,10 +52,12 @@ function Projects({ screenWidth }) {
             <div
               onMouseEnter={() => playVideo(p.embedId)}
               onMouseLeave={turnOffVideo}
-              style={{
-                animation: setEntryAnimationOff && "none",
-                opacity: projectOpacity[i] ? 1 : 0,
-              }}
+              style={
+                {
+                  // animation: setEntryAnimationOff && "none",
+                  // opacity: projectOpacity[i] ? 1 : 0,
+                }
+              }
               key={p.img}
               className={styles.project}
             >

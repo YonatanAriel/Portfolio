@@ -7,14 +7,13 @@
 .container > h1 {
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.72);
   font-size: 4rem;
-  animation: reveal 1.5s ease-in-out forwards 200ms;
+  /* animation: reveal 1.5s ease-in-out forwards 200ms; */
 }
 .projectsContainer {
   width: 80vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2rem;
 }
 
 .project {
@@ -32,86 +31,10 @@
   -webkit-transform-origin: center left;
   transform-origin: center left;
   position: relative;
-  /* visibility: hidden ; */
 }
-.projectsContainer .project:first-child {
-  animation: fade-in 10s ease-out;
+.projectsContainer .project {
+  animation: fade-in 1s ease-in;
 }
-.projectsContainer .project:nth-child(2) {
-  animation: fade-in 1s ease-out 1s;
-}
-.projectsContainer .project:nth-child(3) {
-  animation: fade-in 1s ease-out 1s;
-}
-.projectsContainer .project:nth-child(4) {
-  animation: fade-in 1s ease-out 1s;
-}
-.projectsContainer .project:nth-child(5) {
-  animation: fade-in 1s ease-out 0.8s;
-}
-.projectsContainer .project:nth-child(6) {
-  animation: fade-in 1s ease-out 1s;
-}
-.projectsContainer .project:nth-child(7) {
-  animation: fade-in 1s ease-out 1.2s;
-}
-.projectsContainer .project:nth-child(8) {
-  animation: fade-in 1s ease-out 1.4s;
-}
-.projectsContainer .project:nth-child(9) {
-  animation: fade-in 1s ease-out 1.6s;
-}
-.projectsContainer .project:nth-child(10) {
-  animation: fade-in 1s ease-out 1.8s;
-}
-.projectsContainer .project:nth-child(11) {
-  animation: fade-in 1s ease-out 2s;
-}
-.projectsContainer .project:nth-child(12) {
-  animation: fade-in 1s ease-out 2.2s;
-}
-.projectsContainer .project:nth-child(13) {
-  animation: fade-in 1s ease-out 4.2s;
-}
-/* .projectsContainer .project:first-child {
-  animation: grow 1s ease-out !important;
-}
-.projectsContainer .project:nth-child(2) {
-  animation: grow 1s ease-out 0.35s !important;
-}
-.projectsContainer .project:nth-child(3) {
-  animation: grow 1s ease-out 0.7s !important;
-}
-.projectsContainer .project:nth-child(4) {
-  animation: grow 1s ease-out 1.05s !important;
-}
-.projectsContainer .project:nth-child(5) {
-  animation: grow 1s ease-out 1.4s !important;
-}
-.projectsContainer .project:nth-child(6) {
-  animation: grow 1s ease-out 1.75s;
-}
-.projectsContainer .project:nth-child(7) {
-  animation: grow 1s ease-out 2.1s;
-}
-.projectsContainer .project:nth-child(8) {
-  animation: grow 1s ease-out 2.45s;
-}
-.projectsContainer .project:nth-child(9) {
-  animation: grow 1s ease-out 2.8s;
-}
-.projectsContainer .project:nth-child(10) {
-  animation: grow 1s ease-out 3.15s;
-}
-.projectsContainer .project:nth-child(11) {
-  animation: grow 1s ease-out 3.5s;
-}
-.projectsContainer .project:nth-child(12) {
-  animation: grow 1s ease-out 3.85s;
-}
-.projectsContainer .project:nth-child(13) {
-  animation: grow 1s ease-out 4.2s;
-} */
 
 @keyframes fade-in {
   0% {
@@ -310,6 +233,7 @@
   .projectsContainer {
     width: 90vw !important;
     justify-content: center !important;
+    padding: 0 2rem;
   }
   .projectsContainer:hover .project:hover {
     -webkit-transform: scale(1.3) !important;
