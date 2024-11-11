@@ -5,7 +5,6 @@
   border-radius: 12px;
   z-index: 1;
   animation: fadeIn 1.5s ease-in-out;
-  /* max-width: 83dvw; */
   max-width: 80vw;
   border: 2px solid white;
 }

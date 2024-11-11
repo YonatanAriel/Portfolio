@@ -7,7 +7,6 @@
 .container > h1 {
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.72);
   font-size: 4rem;
-  /* animation: reveal 1.5s ease-in-out forwards 200ms; */
 }
 .projectsContainer {
   width: 80vw;

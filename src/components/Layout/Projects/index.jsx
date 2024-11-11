@@ -48,16 +48,10 @@ function Projects({ screenWidth }) {
       <section className={styles.container}>
         <h1>Projects</h1>
         <div className={styles.projectsContainer}>
-          {projects.map((p, i) => (
+          {projects.map((p) => (
             <div
               onMouseEnter={() => playVideo(p.embedId)}
               onMouseLeave={turnOffVideo}
-              style={
-                {
-                  // animation: setEntryAnimationOff && "none",
-                  // opacity: projectOpacity[i] ? 1 : 0,
-                }
-              }
               key={p.img}
               className={styles.project}
             >
