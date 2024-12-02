@@ -11,7 +11,7 @@ function Triangle({ hideTriangle, showTriangle, setShowTriangle }) {
         <>
           <div onClick={hideTriangle} className={styles.triangle}>
             <a
-              href="https://drive.google.com/file/d/1qYrdFnVGFsCz6e1Nj-UwinnpyyT-N4FE/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ErS2MY-KIHNaa_vqQh6_nZ-umGFtq7_p/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
