@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./style.module.css";
 import HeaderLink from "../../HeaderLink";
 

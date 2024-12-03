@@ -2,6 +2,7 @@ import { useContext } from "react";
 import styles from "./style.module.css";
 import { ScreenWidthContext } from "..";
 
+// eslint-disable-next-line react/prop-types
 function Triangle({ hideTriangle, showTriangle, setShowTriangle }) {
   const { screenWidth } = useContext(ScreenWidthContext);
 

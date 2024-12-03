@@ -5,6 +5,7 @@ import TopSkills from "../../TopSkills";
 import AboutMe from "../../AboutMe";
 import { useInView } from "react-intersection-observer";
 
+// eslint-disable-next-line react/prop-types
 function About({ projectsVisibility, setVisibleSectionsCount, showTriangle }) {
   const [visibility, setVisibility] = useState({
     welcome: true,
