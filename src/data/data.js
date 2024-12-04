@@ -399,8 +399,8 @@ export const contactLinks = [
     img: "/assets/icons8-github-250.png",
   },
   {
-    copy: "https://drive.google.com/file/d/1ErS2MY-KIHNaa_vqQh6_nZ-umGFtq7_p/view?usp=sharing",
-    to: "https://drive.google.com/file/d/1ErS2MY-KIHNaa_vqQh6_nZ-umGFtq7_p/view?usp=sharing",
+    copy: "https://drive.google.com/file/d/1_ZG9gVV5XV7fAwKWglpDnnbh5itG9Gyz/view?usp=sharing",
+    to: "https://drive.google.com/file/d/1_ZG9gVV5XV7fAwKWglpDnnbh5itG9Gyz/view?usp=sharing",
     txt: "Resume",
     img: "/assets/icons8-resume-50.png",
   },
