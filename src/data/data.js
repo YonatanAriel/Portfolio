@@ -51,10 +51,6 @@ export const aboutMeData = {
   ],
   facts: [
     {
-      text: "Single",
-      img: "/assets/icons8-account-100.png",
-    },
-    {
       text: "Frontend",
       img: "/assets/icons8-heart-96.png",
     },
@@ -69,6 +65,10 @@ export const aboutMeData = {
     {
       text: "Lives In Israel",
       img: "/assets/icons8-star-of-david-100.png",
+    },
+    {
+      text: "Lifelong Learner",
+      img: "/assets/icons8-account-100.png",
     },
     {
       text: "English & Hebrew",
