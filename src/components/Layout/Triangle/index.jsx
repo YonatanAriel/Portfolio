@@ -12,14 +12,6 @@ function Triangle({ hideTriangle, showTriangle, setShowTriangle }) {
         <>
           <div onClick={hideTriangle} className={styles.triangle}>
             <a
-              href="https://drive.google.com/file/d/1_ZG9gVV5XV7fAwKWglpDnnbh5itG9Gyz/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/assets/icons8-resume-50.png" alt="" />
-              CV
-            </a>
-            <a
               href="https://github.com/YonatanAriel"
               target="_blank"
               rel="noopener noreferrer"
@@ -46,7 +38,7 @@ function Triangle({ hideTriangle, showTriangle, setShowTriangle }) {
             className={styles.arrowTriangle}
           >
             <img src="/assets/icons8-double-up-24.png" alt="" />
-            <span>CV & GH</span>
+            <span>GH</span>
           </div>
           <div className={styles.arrowTriangleBorder}></div>
         </>
