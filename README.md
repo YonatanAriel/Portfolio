@@ -44,7 +44,6 @@ A sleek and modern portfolio website showcasing web development projects, skills
 ![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=flat-square&logo=netlify&logoColor=white)
 
 ## 📂 Project Structure
-
 ```
 portfolio/
 ├── public/
